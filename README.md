@@ -19,6 +19,7 @@ npm install        # installa le dipendenze
 npm run dev        # server di sviluppo su http://localhost:3000
 npm run build      # build statica nella cartella out/
 npm run preview    # anteprima della build statica
+npm run deploy     # build + deploy su Cloudflare Workers (wrangler)
 npm run lint       # controllo ESLint
 ```
 
@@ -33,6 +34,26 @@ NEXT_PUBLIC_SITE_URL=https://tuo-dominio.com
 ```
 
 `NEXT_PUBLIC_SITE_URL` alimenta `metadataBase`, `sitemap.xml`, `robots.txt` e i tag Open Graph.
+
+## Deploy su Cloudflare
+
+Il sito è un **export statico**: si pubblica la cartella `out/` come **static assets**, senza server
+e **senza OpenNext**. L'adapter OpenNext non supporta `output: "export"` (cerca un build server che
+non esiste) e la build fallisce: **non** usare il preset Next.js con
+`npx opennextjs-cloudflare build`.
+
+La configurazione è in `wrangler.jsonc` (Worker con soli asset, `not_found_handling: "404-page"`
+così le rotte mancanti servono `out/404.html`; con `trailingSlash: true` Wrangler reindirizza
+`/lavori` → `/lavori/` e serve `index.html`).
+
+- **Da locale**: `npm run deploy` (build + `wrangler deploy`). Anteprima sul runtime Cloudflare:
+  `npm run preview:cf` (build + `wrangler dev`).
+- **Cloudflare Workers Builds** (repo collegato dal dashboard): *build command* `npm run build`,
+  *deploy command* `npx wrangler deploy`.
+- **Cloudflare Pages** (alternativa): *build command* `npm run build`, *output directory* `out`.
+
+Se il Worker nel dashboard ha un nome diverso da `tirocchi-com`, allinea `name` in
+`wrangler.jsonc` (o rinomina il Worker nel dashboard).
 
 ## Aggiungere un progetto in 3 passi
 

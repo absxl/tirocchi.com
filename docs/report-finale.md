@@ -53,5 +53,8 @@ Dettaglio completo in `docs/da-compilare.md`.
 - **Licenze**: diritti di immagini/video/logo da confermare; font già open source (Fontsource).
 - **Peso asset**: i video MP4 originali sono pesanti; valutare transcodifica/streaming se necessario.
 - **Contenuti archivio**: i titoli generici dell'archivio andrebbero sostituiti con dati reali.
-- **Deploy**: non configurato (come da istruzioni); serve solo pubblicare `out/`.
+- **Deploy**: configurato per **Cloudflare Workers static assets** (`wrangler.jsonc` + `npm run deploy`,
+  `not_found_handling: "404-page"`). Essendo un export statico, **non** va usato OpenNext
+  (`npx opennextjs-cloudflare build` fallisce con `output: "export"`). Alternativa: Cloudflare Pages
+  con build `npm run build` e output `out`.
 - **Audit finale**: eseguire Lighthouse/axe e test tastiera su un ambiente con browser.
