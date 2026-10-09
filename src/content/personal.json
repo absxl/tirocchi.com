@@ -1,0 +1,1589 @@
+{
+  "categories": [
+    {
+      "slug": "ai-art",
+      "title": "AI ART",
+      "description": "Ricerca visiva con AI tra materia, figure e mondi sintetici.",
+      "cover": "/assets/personal-cover-ai-shooting.jpg",
+      "count": 83
+    },
+    {
+      "slug": "cover-art",
+      "title": "COVER ART",
+      "description": "Cover e identità visive per la musica.",
+      "cover": "/assets/personal-gallery/cover-art/00002.jpg",
+      "count": 13
+    },
+    {
+      "slug": "photography",
+      "title": "FOTO",
+      "description": "Osservazione fotografica, luce e composizione.",
+      "cover": "/assets/personal-cover-photography.png",
+      "count": 32
+    },
+    {
+      "slug": "video",
+      "title": "VIDEO",
+      "description": "Regia, montaggio e immaginari musicali.",
+      "cover": "/assets/personal-video/posters/video-category-cover.png",
+      "count": 5
+    },
+    {
+      "slug": "video-ai",
+      "title": "VIDEO AI",
+      "description": "Video generativi e studi in movimento sviluppati con AI.",
+      "cover": "/assets/personal-video/posters/video-ai-category.jpg",
+      "count": 5
+    },
+    {
+      "slug": "experiments",
+      "title": "ESPERIMENTI",
+      "description": "Motion e prove visive fuori formato.",
+      "cover": "/assets/personal-experiments/experiment-01.webp",
+      "count": 15
+    }
+  ],
+  "items": [
+    {
+      "id": "ai-art-1",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00000.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00000.jpg",
+      "title": "OPERA AI 01",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-2",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00005.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00005.jpg",
+      "title": "OPERA AI 06",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-3",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00010.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00010.jpg",
+      "title": "OPERA AI 11",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-4",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00011.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00011.jpg",
+      "title": "OPERA AI 12",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-5",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00014.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00014.jpg",
+      "title": "OPERA AI 15",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-6",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00015.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00015.jpg",
+      "title": "OPERA AI 16",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-7",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00017.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00017.jpg",
+      "title": "OPERA AI 18",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-8",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00018.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00018.jpg",
+      "title": "OPERA AI 19",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-9",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00019.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00019.jpg",
+      "title": "OPERA AI 20",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-10",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00020.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00020.jpg",
+      "title": "OPERA AI 21",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-11",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00023.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00023.jpg",
+      "title": "OPERA AI 24",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-12",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00024.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00024.jpg",
+      "title": "OPERA AI 25",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-13",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00025.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00025.jpg",
+      "title": "OPERA AI 26",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-14",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00026.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00026.jpg",
+      "title": "OPERA AI 27",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-15",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00027.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00027.jpg",
+      "title": "OPERA AI 28",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-16",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00028.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00028.jpg",
+      "title": "OPERA AI 29",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-17",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00029.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00029.jpg",
+      "title": "OPERA AI 30",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-18",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00030.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00030.jpg",
+      "title": "OPERA AI 31",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-19",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00031.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00031.jpg",
+      "title": "OPERA AI 32",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-20",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00032.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00032.jpg",
+      "title": "OPERA AI 33",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-21",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00033.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00033.jpg",
+      "title": "OPERA AI 34",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-22",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00034.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00034.jpg",
+      "title": "OPERA AI 35",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-23",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00035.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00035.jpg",
+      "title": "OPERA AI 36",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-24",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00036.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00036.jpg",
+      "title": "OPERA AI 37",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-25",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00037.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00037.jpg",
+      "title": "OPERA AI 38",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-26",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00038.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00038.jpg",
+      "title": "OPERA AI 39",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-27",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00039.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00039.jpg",
+      "title": "OPERA AI 40",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-28",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00040.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00040.jpg",
+      "title": "OPERA AI 41",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-29",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00041.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00041.jpg",
+      "title": "OPERA AI 42",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-30",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00042.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00042.jpg",
+      "title": "OPERA AI 43",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-31",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00043.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00043.jpg",
+      "title": "OPERA AI 44",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-32",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00044.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00044.jpg",
+      "title": "OPERA AI 45",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-33",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00045.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00045.jpg",
+      "title": "OPERA AI 46",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-34",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00046.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00046.jpg",
+      "title": "OPERA AI 47",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-35",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00047.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00047.jpg",
+      "title": "OPERA AI 48",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-36",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00048.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00048.jpg",
+      "title": "OPERA AI 49",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-37",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00049.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00049.jpg",
+      "title": "OPERA AI 50",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-38",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00050.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00050.jpg",
+      "title": "OPERA AI 51",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-39",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00051.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00051.jpg",
+      "title": "OPERA AI 52",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-40",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00052.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00052.jpg",
+      "title": "OPERA AI 53",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-41",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00053.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00053.jpg",
+      "title": "OPERA AI 54",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-42",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00054.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00054.jpg",
+      "title": "OPERA AI 55",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-43",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00055.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00055.jpg",
+      "title": "OPERA AI 56",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-44",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00056.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00056.jpg",
+      "title": "OPERA AI 57",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-45",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00057.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00057.jpg",
+      "title": "OPERA AI 58",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-46",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00058.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00058.jpg",
+      "title": "OPERA AI 59",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-47",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00059.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00059.jpg",
+      "title": "OPERA AI 60",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-48",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00060.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00060.jpg",
+      "title": "OPERA AI 61",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-49",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00061.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00061.jpg",
+      "title": "OPERA AI 62",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-50",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00062.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00062.jpg",
+      "title": "OPERA AI 63",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-51",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00063.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00063.jpg",
+      "title": "OPERA AI 64",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-52",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00064.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00064.jpg",
+      "title": "OPERA AI 65",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-53",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00065.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00065.jpg",
+      "title": "OPERA AI 66",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-54",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00066.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00066.jpg",
+      "title": "OPERA AI 67",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-55",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00067.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00067.jpg",
+      "title": "OPERA AI 68",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-56",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00068.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00068.jpg",
+      "title": "OPERA AI 69",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-57",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00069.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00069.jpg",
+      "title": "OPERA AI 70",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-58",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00070.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00070.jpg",
+      "title": "OPERA AI 71",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-59",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00071.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00071.jpg",
+      "title": "OPERA AI 72",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-60",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00072.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00072.jpg",
+      "title": "OPERA AI 73",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-61",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00073.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00073.jpg",
+      "title": "OPERA AI 74",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-62",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00074.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00074.jpg",
+      "title": "OPERA AI 75",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-63",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00075.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00075.jpg",
+      "title": "OPERA AI 76",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-64",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00076.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00076.jpg",
+      "title": "OPERA AI 77",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-65",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00077.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00077.jpg",
+      "title": "OPERA AI 78",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-66",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00078.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00078.jpg",
+      "title": "OPERA AI 79",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-67",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00079.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00079.jpg",
+      "title": "OPERA AI 80",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-68",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00080.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00080.jpg",
+      "title": "OPERA AI 81",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-69",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00081.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00081.jpg",
+      "title": "OPERA AI 82",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-70",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00082.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00082.jpg",
+      "title": "OPERA AI 83",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-71",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/00083.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/thumbs/00083.jpg",
+      "title": "OPERA AI 84",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-72",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-22.web.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-22.web.jpg",
+      "title": "AI / 106",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-73",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-26.web.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-26.web.jpg",
+      "title": "AI / 110",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-74",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-27.web.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-27.web.jpg",
+      "title": "AI / 111",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-75",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-30.web.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-30.web.jpg",
+      "title": "AI / 114",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-76",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-31.web.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-31.web.jpg",
+      "title": "AI / 115",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-77",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-37.web.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-37.web.jpg",
+      "title": "AI / 121",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-78",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-38.web.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-38.web.jpg",
+      "title": "AI / 122",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-79",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-39.web.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-39.web.jpg",
+      "title": "AI / 123",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-80",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-40.web.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-40.web.jpg",
+      "title": "AI / 124",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-81",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-41.web.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-41.web.jpg",
+      "title": "AI / 125",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-82",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-42.web.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-42.web.jpg",
+      "title": "AI / 126",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "ai-art-83",
+      "category": "ai-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-43.web.jpg",
+      "thumb": "/assets/personal-gallery/ai-art/user-drop-2026/user-ai-43.web.jpg",
+      "title": "AI / 127",
+      "year": "2026",
+      "role": "ARTE AI / RICERCA VISIVA"
+    },
+    {
+      "id": "cover-art-1",
+      "category": "cover-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/cover-art/00000.jpg",
+      "thumb": "/assets/personal-gallery/cover-art/thumbs/00000.jpg",
+      "title": "COVER ART 01",
+      "year": "2026",
+      "role": "COVER ART / MUSICA E IDENTITÀ VISIVA"
+    },
+    {
+      "id": "cover-art-2",
+      "category": "cover-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/cover-art/00001.jpg",
+      "thumb": "/assets/personal-gallery/cover-art/thumbs/00001.jpg",
+      "title": "COVER ART 02",
+      "year": "2026",
+      "role": "COVER ART / MUSICA E IDENTITÀ VISIVA"
+    },
+    {
+      "id": "cover-art-3",
+      "category": "cover-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/cover-art/00002.jpg",
+      "thumb": "/assets/personal-gallery/cover-art/thumbs/00002.jpg",
+      "title": "COVER ART 03",
+      "year": "2026",
+      "role": "COVER ART / MUSICA E IDENTITÀ VISIVA"
+    },
+    {
+      "id": "cover-art-4",
+      "category": "cover-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/cover-art/00003.jpg",
+      "thumb": "/assets/personal-gallery/cover-art/thumbs/00003.jpg",
+      "title": "COVER ART 04",
+      "year": "2026",
+      "role": "COVER ART / MUSICA E IDENTITÀ VISIVA"
+    },
+    {
+      "id": "cover-art-5",
+      "category": "cover-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/cover-art/00004.jpg",
+      "thumb": "/assets/personal-gallery/cover-art/thumbs/00004.jpg",
+      "title": "COVER ART 05",
+      "year": "2026",
+      "role": "COVER ART / MUSICA E IDENTITÀ VISIVA"
+    },
+    {
+      "id": "cover-art-6",
+      "category": "cover-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/cover-art/00005.jpg",
+      "thumb": "/assets/personal-gallery/cover-art/thumbs/00005.jpg",
+      "title": "COVER ART 06",
+      "year": "2026",
+      "role": "COVER ART / MUSICA E IDENTITÀ VISIVA"
+    },
+    {
+      "id": "cover-art-7",
+      "category": "cover-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/cover-art/00006.jpg",
+      "thumb": "/assets/personal-gallery/cover-art/thumbs/00006.jpg",
+      "title": "COVER ART 07",
+      "year": "2026",
+      "role": "COVER ART / MUSICA E IDENTITÀ VISIVA"
+    },
+    {
+      "id": "cover-art-8",
+      "category": "cover-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/cover-art/00007.jpg",
+      "thumb": "/assets/personal-gallery/cover-art/thumbs/00007.jpg",
+      "title": "COVER ART 08",
+      "year": "2026",
+      "role": "COVER ART / MUSICA E IDENTITÀ VISIVA"
+    },
+    {
+      "id": "cover-art-9",
+      "category": "cover-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/cover-art/00008.jpg",
+      "thumb": "/assets/personal-gallery/cover-art/thumbs/00008.jpg",
+      "title": "COVER ART 09",
+      "year": "2026",
+      "role": "COVER ART / MUSICA E IDENTITÀ VISIVA"
+    },
+    {
+      "id": "cover-art-10",
+      "category": "cover-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/cover-art/00009.jpg",
+      "thumb": "/assets/personal-gallery/cover-art/thumbs/00009.jpg",
+      "title": "COVER ART 10",
+      "year": "2026",
+      "role": "COVER ART / MUSICA E IDENTITÀ VISIVA"
+    },
+    {
+      "id": "cover-art-11",
+      "category": "cover-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/cover-art/00010.jpg",
+      "thumb": "/assets/personal-gallery/cover-art/thumbs/00010.jpg",
+      "title": "COVER ART 11",
+      "year": "2026",
+      "role": "COVER ART / MUSICA E IDENTITÀ VISIVA"
+    },
+    {
+      "id": "cover-art-12",
+      "category": "cover-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/cover-art/00011.jpg",
+      "thumb": "/assets/personal-gallery/cover-art/thumbs/00011.jpg",
+      "title": "COVER ART 12",
+      "year": "2026",
+      "role": "COVER ART / MUSICA E IDENTITÀ VISIVA"
+    },
+    {
+      "id": "cover-art-13",
+      "category": "cover-art",
+      "type": "image",
+      "image": "/assets/personal-gallery/cover-art/00012.jpg",
+      "thumb": "/assets/personal-gallery/cover-art/thumbs/00012.jpg",
+      "title": "COVER ART 13",
+      "year": "2026",
+      "role": "COVER ART / MUSICA E IDENTITÀ VISIVA"
+    },
+    {
+      "id": "photography-1",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00041.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00041.jpg",
+      "title": "FOTOGRAFIA 01",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-2",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00040.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00040.jpg",
+      "title": "FOTOGRAFIA 02",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-3",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00039.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00039.jpg",
+      "title": "FOTOGRAFIA 03",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-4",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00038.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00038.jpg",
+      "title": "FOTOGRAFIA 04",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-5",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00037.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00037.jpg",
+      "title": "FOTOGRAFIA 05",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-6",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00032.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00032.jpg",
+      "title": "FOTOGRAFIA 07",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-7",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00031.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00031.jpg",
+      "title": "FOTOGRAFIA 08",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-8",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00030.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00030.jpg",
+      "title": "FOTOGRAFIA 09",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-9",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00029.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00029.jpg",
+      "title": "FOTOGRAFIA 10",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-10",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00028.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00028.jpg",
+      "title": "FOTOGRAFIA 11",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-11",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00027.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00027.jpg",
+      "title": "FOTOGRAFIA 12",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-12",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00026.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00026.jpg",
+      "title": "FOTOGRAFIA 13",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-13",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00025.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00025.jpg",
+      "title": "FOTOGRAFIA 14",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-14",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00024.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00024.jpg",
+      "title": "FOTOGRAFIA 15",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-15",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00022.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00022.jpg",
+      "title": "FOTOGRAFIA 16",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-16",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00021.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00021.jpg",
+      "title": "FOTOGRAFIA 17",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-17",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00020.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00020.jpg",
+      "title": "FOTOGRAFIA 18",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-18",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00018.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00018.jpg",
+      "title": "FOTOGRAFIA 19",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-19",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00016.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00016.jpg",
+      "title": "FOTOGRAFIA 20",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-20",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00014.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00014.jpg",
+      "title": "FOTOGRAFIA 21",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-21",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00013.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00013.jpg",
+      "title": "FOTOGRAFIA 22",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-22",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00012.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00012.jpg",
+      "title": "FOTOGRAFIA 23",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-23",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00011.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00011.jpg",
+      "title": "FOTOGRAFIA 24",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-24",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00010.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00010.jpg",
+      "title": "FOTOGRAFIA 25",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-25",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00009.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00009.jpg",
+      "title": "FOTOGRAFIA 26",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-26",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00008.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00008.jpg",
+      "title": "FOTOGRAFIA 27",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-27",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00007.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00007.jpg",
+      "title": "FOTOGRAFIA 28",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-28",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00006.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00006.jpg",
+      "title": "FOTOGRAFIA 29",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-29",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00004.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00004.jpg",
+      "title": "FOTOGRAFIA 30",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-30",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00003.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00003.jpg",
+      "title": "FOTOGRAFIA 31",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-31",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00001.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00001.jpg",
+      "title": "FOTOGRAFIA 32",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "photography-32",
+      "category": "photography",
+      "type": "image",
+      "image": "/assets/personal-gallery/photography/00000.jpg",
+      "thumb": "/assets/personal-gallery/photography/thumbs/00000.jpg",
+      "title": "FOTOGRAFIA 33",
+      "year": "2026",
+      "role": "FOTOGRAFIA / LAVORO PERSONALE"
+    },
+    {
+      "id": "experiments-1",
+      "category": "experiments",
+      "type": "video",
+      "image": "/assets/personal-experiments/motion-study-poster.webp",
+      "thumb": "/assets/personal-experiments/motion-study-poster.webp",
+      "video": "/assets/personal-experiments/motion-study.mp4",
+      "title": "MOTION STUDY",
+      "year": "2026",
+      "role": "MOTION / VISUAL RESEARCH"
+    },
+    {
+      "id": "experiments-2",
+      "category": "experiments",
+      "type": "image",
+      "image": "/assets/personal-experiments/experiment-01.webp",
+      "thumb": "/assets/personal-experiments/experiment-01.webp",
+      "title": "STUDY 01",
+      "year": "2026",
+      "role": "VISUAL RESEARCH"
+    },
+    {
+      "id": "experiments-3",
+      "category": "experiments",
+      "type": "image",
+      "image": "/assets/personal-experiments/experiment-02.webp",
+      "thumb": "/assets/personal-experiments/experiment-02.webp",
+      "title": "STUDY 02",
+      "year": "2026",
+      "role": "VISUAL RESEARCH"
+    },
+    {
+      "id": "experiments-4",
+      "category": "experiments",
+      "type": "image",
+      "image": "/assets/personal-experiments/experiment-04.webp",
+      "thumb": "/assets/personal-experiments/experiment-04.webp",
+      "title": "STUDY 04",
+      "year": "2026",
+      "role": "VISUAL RESEARCH"
+    },
+    {
+      "id": "experiments-5",
+      "category": "experiments",
+      "type": "image",
+      "image": "/assets/personal-experiments/experiment-05.webp",
+      "thumb": "/assets/personal-experiments/experiment-05.webp",
+      "title": "STUDY 05",
+      "year": "2026",
+      "role": "VISUAL RESEARCH"
+    },
+    {
+      "id": "experiments-6",
+      "category": "experiments",
+      "type": "image",
+      "image": "/assets/personal-experiments/experiment-06.webp",
+      "thumb": "/assets/personal-experiments/experiment-06.webp",
+      "title": "STUDY 06",
+      "year": "2026",
+      "role": "VISUAL RESEARCH"
+    },
+    {
+      "id": "experiments-7",
+      "category": "experiments",
+      "type": "image",
+      "image": "/assets/personal-experiments/experiment-07.webp",
+      "thumb": "/assets/personal-experiments/experiment-07.webp",
+      "title": "STUDY 07",
+      "year": "2026",
+      "role": "VISUAL RESEARCH"
+    },
+    {
+      "id": "experiments-8",
+      "category": "experiments",
+      "type": "image",
+      "image": "/assets/personal-experiments/experiment-08.webp",
+      "thumb": "/assets/personal-experiments/experiment-08.webp",
+      "title": "STUDY 08",
+      "year": "2026",
+      "role": "VISUAL RESEARCH"
+    },
+    {
+      "id": "experiments-9",
+      "category": "experiments",
+      "type": "image",
+      "image": "/assets/personal-experiments/experiment-09.webp",
+      "thumb": "/assets/personal-experiments/experiment-09.webp",
+      "title": "STUDY 09",
+      "year": "2026",
+      "role": "VISUAL RESEARCH"
+    },
+    {
+      "id": "experiments-10",
+      "category": "experiments",
+      "type": "image",
+      "image": "/assets/personal-experiments/experiment-10.webp",
+      "thumb": "/assets/personal-experiments/experiment-10.webp",
+      "title": "STUDY 10",
+      "year": "2026",
+      "role": "VISUAL RESEARCH"
+    },
+    {
+      "id": "experiments-11",
+      "category": "experiments",
+      "type": "image",
+      "image": "/assets/personal-experiments/experiment-11.webp",
+      "thumb": "/assets/personal-experiments/experiment-11.webp",
+      "title": "STUDY 11",
+      "year": "2026",
+      "role": "VISUAL RESEARCH"
+    },
+    {
+      "id": "experiments-12",
+      "category": "experiments",
+      "type": "image",
+      "image": "/assets/personal-experiments/experiment-12.webp",
+      "thumb": "/assets/personal-experiments/experiment-12.webp",
+      "title": "STUDY 12",
+      "year": "2026",
+      "role": "VISUAL RESEARCH"
+    },
+    {
+      "id": "experiments-13",
+      "category": "experiments",
+      "type": "image",
+      "image": "/assets/personal-experiments/experiment-13.webp",
+      "thumb": "/assets/personal-experiments/experiment-13.webp",
+      "title": "STUDY 13",
+      "year": "2026",
+      "role": "VISUAL RESEARCH"
+    },
+    {
+      "id": "experiments-14",
+      "category": "experiments",
+      "type": "image",
+      "image": "/assets/personal-experiments/experiment-14.webp",
+      "thumb": "/assets/personal-experiments/experiment-14.webp",
+      "title": "STUDY 14",
+      "year": "2026",
+      "role": "VISUAL RESEARCH"
+    },
+    {
+      "id": "experiments-15",
+      "category": "experiments",
+      "type": "image",
+      "image": "/assets/personal-experiments/experiment-15.webp",
+      "thumb": "/assets/personal-experiments/experiment-15.webp",
+      "title": "STUDY 15",
+      "year": "2026",
+      "role": "VISUAL RESEARCH"
+    },
+    {
+      "id": "video-1",
+      "category": "video",
+      "type": "video",
+      "image": "/assets/personal-video/posters/giorno-j.jpg",
+      "thumb": "/assets/personal-video/posters/giorno-j.jpg",
+      "video": "/assets/personal-video/music-videos/giorno-j.optimized.mp4",
+      "title": "GIORNO — J",
+      "year": "2026",
+      "role": "VIDEO MUSICALE / MONTAGGIO"
+    },
+    {
+      "id": "video-2",
+      "category": "video",
+      "type": "video",
+      "image": "/assets/personal-video/posters/giorno-stamina.jpg",
+      "thumb": "/assets/personal-video/posters/giorno-stamina.jpg",
+      "video": "/assets/personal-video/music-videos/giorno-stamina.optimized.mp4",
+      "title": "GIORNO — STAMINA",
+      "year": "2026",
+      "role": "VIDEO MUSICALE / MONTAGGIO"
+    },
+    {
+      "id": "video-3",
+      "category": "video",
+      "type": "video",
+      "image": "/assets/personal-video/posters/giorno-valle-giulia.jpg",
+      "thumb": "/assets/personal-video/posters/giorno-valle-giulia.jpg",
+      "video": "/assets/personal-video/music-videos/giorno-valle-giulia.optimized.mp4",
+      "title": "GIORNO — VALLE GIULIA",
+      "year": "2026",
+      "role": "VIDEO MUSICALE / MONTAGGIO"
+    },
+    {
+      "id": "video-4",
+      "category": "video",
+      "type": "video",
+      "image": "/assets/personal-video/posters/attitude-x-gios.jpg",
+      "thumb": "/assets/personal-video/posters/attitude-x-gios.jpg",
+      "video": "/assets/personal-video/music-videos/attitude-x-gios.optimized.mp4",
+      "title": "ATTITUDE X GIOS",
+      "year": "2026",
+      "role": "VIDEO MUSICALE / MONTAGGIO"
+    },
+    {
+      "id": "video-5",
+      "category": "video",
+      "type": "video",
+      "image": "/assets/personal-video/posters/kimori-firework.jpg",
+      "thumb": "/assets/personal-video/posters/kimori-firework.jpg",
+      "video": "/assets/personal-video/music-videos/kimori-firework.optimized.mp4",
+      "title": "KIMORI — FIREWORK",
+      "year": "2026",
+      "role": "VIDEO MUSICALE / MONTAGGIO"
+    },
+    {
+      "id": "video-ai-1",
+      "category": "video-ai",
+      "type": "video",
+      "image": "/assets/personal-video/posters/video-ai-0929-01.jpg",
+      "thumb": "/assets/personal-video/posters/video-ai-0929-01.jpg",
+      "video": "/assets/personal-video/ai-videos/0929-01.mp4",
+      "title": "0929 — 01",
+      "year": "2026",
+      "role": "VIDEO AI / VISUAL RESEARCH"
+    },
+    {
+      "id": "video-ai-2",
+      "category": "video-ai",
+      "type": "video",
+      "image": "/assets/personal-video/posters/video-ai-0929.jpg",
+      "thumb": "/assets/personal-video/posters/video-ai-0929.jpg",
+      "video": "/assets/personal-video/ai-videos/0929.mp4",
+      "title": "0929",
+      "year": "2026",
+      "role": "VIDEO AI / VISUAL RESEARCH"
+    },
+    {
+      "id": "video-ai-3",
+      "category": "video-ai",
+      "type": "video",
+      "image": "/assets/personal-video/posters/video-ai-0930.jpg",
+      "thumb": "/assets/personal-video/posters/video-ai-0930.jpg",
+      "video": "/assets/personal-video/ai-videos/0930.mp4",
+      "title": "0930",
+      "year": "2026",
+      "role": "VIDEO AI / VISUAL RESEARCH"
+    },
+    {
+      "id": "video-ai-4",
+      "category": "video-ai",
+      "type": "video",
+      "image": "/assets/personal-video/posters/video-ai-showreel.jpg",
+      "thumb": "/assets/personal-video/posters/video-ai-showreel.jpg",
+      "video": "/assets/personal-video/ai-videos/ai-showreel.mp4",
+      "title": "AI SHOWREEL",
+      "year": "2026",
+      "role": "VIDEO AI / VISUAL RESEARCH"
+    },
+    {
+      "id": "video-ai-5",
+      "category": "video-ai",
+      "type": "video",
+      "image": "/assets/personal-video/posters/video-ai-bergoz.jpg",
+      "thumb": "/assets/personal-video/posters/video-ai-bergoz.jpg",
+      "video": "/assets/personal-video/ai-videos/bergoz-final.mp4",
+      "title": "BERGOZ",
+      "year": "2026",
+      "role": "VIDEO AI / VISUAL RESEARCH"
+    }
+  ]
+}

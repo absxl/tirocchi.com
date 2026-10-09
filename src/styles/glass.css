@@ -1,0 +1,116 @@
+/* Liquid glass — materiale condiviso per le superfici in vetro.
+   Base: tinta bassa + blur + saturazione; rim 1px con specifica interna
+   (top più chiaro, lati/basso più deboli) e sheen diagonale in screen.
+   La rifrazione SVG (.glass--refract) è Chromium-only, dietro @supports. */
+
+.glass {
+  position: relative;
+  isolation: isolate;
+  background: var(--glass-tint);
+  border: 1px solid var(--glass-rim);
+  border-radius: var(--radius-l);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(180%) brightness(1.06);
+  backdrop-filter: blur(var(--glass-blur)) saturate(180%) brightness(1.06);
+  box-shadow:
+    var(--glass-shadow),
+    inset 0 1px 0 var(--glass-spec-top),
+    inset 0 -1px 0 var(--glass-spec-low),
+    inset 1px 0 0 var(--glass-spec-mid),
+    inset -1px 0 0 var(--glass-spec-mid);
+}
+
+.glass::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+  pointer-events: none;
+  background: var(--glass-sheen);
+  mix-blend-mode: screen;
+  opacity: 0.8;
+}
+
+/* Barra a tutta larghezza: niente raggio, hairline sul bordo inferiore,
+   tinta un po' più densa per la leggibilità della navigazione */
+.glass--bar {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid var(--glass-rim);
+  background: color-mix(in srgb, var(--bg) 68%, transparent);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 var(--glass-spec-top),
+    inset 0 -1px 0 var(--glass-spec-low);
+}
+
+/* Vetro leggero per chip, filtri, bottoni */
+.glass-lite {
+  background: color-mix(in srgb, var(--bg) 62%, transparent);
+  border: 1px solid var(--glass-rim);
+  border-radius: var(--radius);
+  -webkit-backdrop-filter: blur(8px) saturate(150%);
+  backdrop-filter: blur(8px) saturate(150%);
+  box-shadow: inset 0 1px 0 var(--glass-spec-mid);
+}
+
+/* Rifrazione reale del backdrop — solo dove url() è supportato (Chromium).
+   Blur leggero prima del displacement così il bending resta visibile. */
+@supports (backdrop-filter: url(#lg-refract)) {
+  .glass--refract {
+    -webkit-backdrop-filter: blur(10px) url(#lg-refract) saturate(180%) brightness(1.06);
+    backdrop-filter: blur(10px) url(#lg-refract) saturate(180%) brightness(1.06);
+  }
+}
+
+/* Morph fluido della forma — solo superfici in vetro, compositor-friendly */
+@keyframes glass-morph {
+  0%,
+  100% {
+    border-radius: 20px 20px 20px 20px;
+  }
+  33% {
+    border-radius: 26px 18px 24px 16px;
+  }
+  66% {
+    border-radius: 17px 25px 15px 27px;
+  }
+}
+
+.glass--morph {
+  animation: glass-morph 9s ease-in-out infinite;
+}
+
+/* Filtro SVG nascosto (montato dai layout) */
+.glass-filter {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Fallback: niente blur → superficie quasi opaca */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass,
+  .glass-lite {
+    background: var(--glass-tint-strong);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .glass,
+  .glass-lite {
+    background: var(--glass-tint-strong);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glass--morph {
+    animation: none;
+  }
+}

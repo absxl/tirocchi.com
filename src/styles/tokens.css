@@ -1,0 +1,103 @@
+@property --accent {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #3b82f6;
+}
+
+:root {
+  /* Colore — la palette deriva dall'accento, che cambia per sezione.
+     Cambiando solo --accent cambia l'intero schema (sfondo, linee, secondario). */
+  --accent: #3b82f6;
+  --accent-ink: #050810;
+
+  --bg: color-mix(in srgb, var(--accent) 7%, #090b0e);
+  --bg-elev: color-mix(in srgb, var(--accent) 11%, #12151a);
+  --bg-elev-2: color-mix(in srgb, var(--accent) 15%, #171b21);
+  --fg: #ffffff;
+  --fg-dim: color-mix(in srgb, var(--accent) 26%, #aeb4be);
+  --fg-faint: color-mix(in srgb, var(--accent) 18%, #7b828c);
+  --line: color-mix(in srgb, var(--accent) 20%, #2a2f37);
+  --line-strong: color-mix(in srgb, var(--accent) 28%, #3d434c);
+
+  transition: --accent 0.6s ease;
+
+  /* Tipografia — display Bricolage Grotesque, testo/etichette Space Mono */
+  --font-display: "Bricolage Grotesque Variable", "Bricolage Grotesque", system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --font-body: var(--font-mono);
+
+  --step--1: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
+  --step-0: clamp(0.88rem, 0.83rem + 0.3vw, 1rem);
+  --step-1: clamp(1rem, 0.94rem + 0.45vw, 1.2rem);
+  --step-2: clamp(1.2rem, 1.08rem + 0.8vw, 1.7rem);
+  --step-3: clamp(1.5rem, 1.25rem + 1.4vw, 2.4rem);
+  --display: clamp(2.2rem, 7vw, 6rem);
+  --display-s: clamp(1.5rem, 4.4vw, 3.1rem);
+
+  /* Spazi — compatti */
+  --space-2xs: 0.2rem;
+  --space-xs: 0.4rem;
+  --space-s: 0.6rem;
+  --space-m: 1rem;
+  --space-l: 1.5rem;
+  --space-xl: clamp(2rem, 4vw, 3rem);
+  --space-2xl: clamp(3rem, 6vw, 4.5rem);
+  --pad: clamp(1rem, 3vw, 3rem);
+  --maxw: 1400px;
+  --maxw-text: 66ch;
+
+  /* Forma e movimento — arrotondato e fluido */
+  --radius-s: 8px;
+  --radius: 12px;
+  --radius-l: 20px;
+  --radius-pill: 999px;
+  --dur: 0.25s;
+  --dur-slow: 0.6s;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Liquid glass — superfici in vetro */
+  --glass-blur: 16px;
+  --glass-tint: color-mix(in srgb, var(--bg) 55%, transparent);
+  --glass-tint-strong: color-mix(in srgb, var(--bg) 88%, transparent);
+  --glass-rim: rgba(255, 255, 255, 0.18);
+  --glass-spec-top: rgba(255, 255, 255, 0.42);
+  --glass-spec-mid: rgba(255, 255, 255, 0.14);
+  --glass-spec-low: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 16px 48px rgba(0, 0, 0, 0.38);
+  --glass-sheen: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0.02) 34%,
+    transparent 58%,
+    rgba(255, 255, 255, 0.06) 100%
+  );
+
+  --header-h: 3.4rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur: 0.01ms;
+    --dur-slow: 0.01ms;
+    transition: none;
+  }
+}
+
+/* Tema delle pagine interne — ripreso dal vecchio sito di Matteo.
+   La home resta invariata (token di :root). */
+html[data-theme="inner"] {
+  --accent: #abc8ee;
+  --accent-ink: #0a1017;
+
+  --bg: #080a0d;
+  --bg-elev: #14181d;
+  --bg-elev-2: #1a1f25;
+  --fg: #eef1f4;
+  --fg-dim: #8e99a8;
+  --fg-faint: #6b7683;
+  --line: rgba(219, 226, 235, 0.22);
+  --line-strong: rgba(219, 226, 235, 0.38);
+
+  --font-display: "Inter Variable", "Inter", system-ui, sans-serif;
+  --font-body: "Inter Variable", "Inter", system-ui, sans-serif;
+}

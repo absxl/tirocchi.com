@@ -1,0 +1,160 @@
+.header {
+  composes: glass glass--bar glass--refract from global;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  opacity: var(--reveal, 1);
+  transform: translateY(calc(-100% * (1 - var(--reveal, 1))));
+  will-change: opacity, transform;
+}
+
+/* On the home page the header is out of flow and starts hidden, then fades in
+   gradually as you scroll through the hero. */
+.fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  --reveal: 0;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-m);
+  min-height: var(--header-h);
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: var(--pad);
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  line-height: 1;
+}
+
+.brandName {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-size: var(--step-0);
+  text-transform: uppercase;
+}
+
+.brandRole {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--fg-dim);
+}
+
+.nav {
+  display: none;
+  gap: clamp(1rem, 2.4vw, 2.4rem);
+}
+
+.navLink {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fg-dim);
+  padding: 0.4rem 0;
+  border-bottom: 1px solid transparent;
+  transition: color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+
+.navLink:hover,
+.navLink:focus-visible {
+  color: var(--fg);
+}
+
+.navLink[aria-current="page"] {
+  color: var(--fg);
+  border-bottom-color: var(--accent);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-m);
+}
+
+.lang {
+  display: flex;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+}
+
+.langLink {
+  color: var(--fg-faint);
+  letter-spacing: 0.1em;
+  padding: 0.2rem 0.1rem;
+}
+
+.langLink[aria-current="true"] {
+  color: var(--fg);
+}
+
+.menuButton {
+  composes: glass-lite from global;
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fg);
+  padding: 0.5rem 0.75rem;
+  transition: background var(--dur) var(--ease), color var(--dur) var(--ease),
+    border-color var(--dur) var(--ease);
+}
+
+.menuButton:hover,
+.menuButton:focus-visible {
+  background: var(--fg);
+  color: var(--bg);
+}
+
+.panel {
+  composes: glass from global;
+  position: fixed;
+  inset: var(--header-h) 0 0 0;
+  z-index: 49;
+  padding: var(--space-xl) var(--pad) var(--space-2xl);
+  overflow-y: auto;
+}
+
+.panelNav {
+  display: flex;
+  flex-direction: column;
+}
+
+.panelLink {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-m);
+  padding: var(--space-s) 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 9vw, 3.2rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.12;
+}
+
+.panelIndex {
+  color: var(--accent);
+}
+
+@media (min-width: 900px) {
+  .nav {
+    display: flex;
+  }
+
+  .menuButton {
+    display: none;
+  }
+}

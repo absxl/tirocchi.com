@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090b0e" />
+    <meta name="description" content="Matteo Tirocchi — Art Director. Progetti pubblicitari, sperimentazioni personali e un processo creativo giocabile." />
+    <title>MATTEO TIROCCHI — ART DIRECTOR</title>
+    <link rel="icon" type="image/png" href="/assets/branding/favicon-demone.png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/home-overrides.css" />
+  </head>
+  <body>
+    <div class="app-noise" aria-hidden="true"></div>
+    <main id="app" class="app-shell">
+      <section id="home-view" class="view view-home" aria-labelledby="home-title">
+        <header class="site-header home-header">
+          <button class="wordmark" data-action="home" aria-label="Go to home"><img class="wordmark-logo wordmark-logo-white" src="/assets/branding/logowhite.png" alt="" /><span>MATTEO TIROCCHI</span></button>
+          <nav class="site-nav" aria-label="Navigazione principale"><button data-action="portfolio">ADV PORTFOLIO</button><button data-action="play">PLAY</button><button data-action="personal">CREATIVITÀ</button></nav>
+          <a class="header-contact" href="https://www.linkedin.com/in/matteo-tirocchi-663528273/" target="_blank" rel="noreferrer">SCRIVIMI ↗</a>
+        </header>
+        <div class="home-stage">
+          <div class="home-intro"><span class="eyebrow">/ MENU PRINCIPALE</span><h1 id="home-title">SELEZIONA UN’AREA</h1></div>
+          <div id="home-cards" class="home-cards" role="listbox" aria-label="Main menu"></div>
+        </div>
+        <footer class="home-footer"><nav class="footer-social" aria-label="Collegamenti social"><a href="https://www.instagram.com/shinji.pdn/" target="_blank" rel="noreferrer">INSTAGRAM ↗</a><a href="https://www.behance.net/matteoshinji" target="_blank" rel="noreferrer">BEHANCE ↗</a><a href="https://www.linkedin.com/in/matteo-tirocchi-663528273/" target="_blank" rel="noreferrer">LINKEDIN ↗</a></nav></footer>
+      </section>
+
+      <section id="portfolio-view" class="view interior-view" aria-labelledby="portfolio-title" hidden>
+        <header class="site-header interior-header"><button class="header-back-button" data-action="back" aria-label="Torna indietro">←</button><div><button class="wordmark" data-action="home" aria-label="Torna alla home"><img class="wordmark-logo wordmark-logo-white" src="/assets/branding/logowhite.png" alt="" /><span>MATTEO TIROCCHI</span></button><span class="crumb">/ ADV</span></div><nav class="site-nav" aria-label="Navigazione principale"><button data-action="portfolio">ADV PORTFOLIO</button><button data-action="play">PLAY</button><button data-action="personal">CREATIVITÀ</button></nav><a class="header-contact" href="https://www.linkedin.com/in/matteo-tirocchi-663528273/" target="_blank" rel="noreferrer">SCRIVIMI ↗</a></header>
+        <div class="page-heading"><div><span class="eyebrow">LAVORI / SELEZIONE</span><h1 id="portfolio-title">ADV PORTFOLIO</h1></div></div>
+        <div id="portfolio-grid" class="portfolio-grid"></div>
+        <footer class="page-footer"><button class="back-button" data-action="home">← MENU PRINCIPALE</button><span class="mono">01 / 07</span></footer>
+      </section>
+
+      <section id="personal-view" class="view interior-view" aria-labelledby="personal-title" hidden>
+        <header class="site-header interior-header"><button class="header-back-button" data-action="back" aria-label="Torna indietro">←</button><div><button class="wordmark" data-action="home" aria-label="Torna alla home"><img class="wordmark-logo wordmark-logo-white" src="/assets/branding/logowhite.png" alt="" /><span>MATTEO TIROCCHI</span></button><span class="crumb">/ CREATIVITÀ</span></div><nav class="site-nav" aria-label="Navigazione principale"><button data-action="portfolio">ADV PORTFOLIO</button><button data-action="play">PLAY</button><button data-action="personal">CREATIVITÀ</button></nav><a class="header-contact" href="https://www.linkedin.com/in/matteo-tirocchi-663528273/" target="_blank" rel="noreferrer">SCRIVIMI ↗</a></header>
+        <div id="personal-category-menu" class="personal-category-menu">
+          <div class="personal-category-heading"><div><span class="eyebrow">ARCHIVIO VISIVO</span><h1 id="personal-title">CREATIVITÀ</h1></div><span class="mono">06 CATEGORIE</span></div>
+          <div id="personal-category-grid" class="personal-category-grid"></div>
+        </div>
+        <div id="personal-archive-shell" class="personal-archive-shell" hidden>
+          <div class="archive-heading"><div><span class="eyebrow">COLLEZIONE</span><h1 id="archive-title">ARCHIVIO CREATIVO</h1></div><strong id="archive-counter" class="archive-counter">00 OPERE</strong></div>
+          <div class="archive-toolbar simple-archive-toolbar"><button id="personal-category-back" class="archive-back-button" type="button">← CATEGORIE</button></div>
+          <div id="personal-grid" class="personal-archive-content"></div>
+          <div id="personal-viewer" class="media-viewer" hidden aria-hidden="true"></div>
+        </div>
+        <footer class="page-footer"><button class="back-button" data-action="home">← MENU PRINCIPALE</button><span class="mono">/ CREATIVITÀ</span></footer>
+      </section>
+
+      <section id="case-view" class="view case-view" hidden aria-labelledby="case-title">
+        <header class="site-header interior-header"><button class="header-back-button" data-action="back" aria-label="Torna indietro">←</button><div><button class="wordmark" data-action="home" aria-label="Torna alla home"><img class="wordmark-logo wordmark-logo-white" src="/assets/branding/logowhite.png" alt="" /><span>MATTEO TIROCCHI</span></button><span id="case-crumb" class="crumb">/ CASE</span></div><nav class="site-nav" aria-label="Navigazione principale"><button data-action="portfolio">ADV PORTFOLIO</button><button data-action="play">PLAY</button><button data-action="personal">CREATIVITÀ</button></nav><a class="header-contact" href="https://www.linkedin.com/in/matteo-tirocchi-663528273/" target="_blank" rel="noreferrer">SCRIVIMI ↗</a></header>
+        <article id="case-content" class="case-content"></article>
+      </section>
+
+      <section id="play-view" class="view play-view" hidden aria-labelledby="game-title">
+        <header class="site-header play-header"><button class="header-back-button" data-action="back" aria-label="Torna indietro">←</button><button class="wordmark" data-action="home" aria-label="Torna alla home"><img class="wordmark-logo wordmark-logo-white" src="/assets/branding/logowhite.png" alt="" /><span>MATTEO TIROCCHI</span></button><nav class="site-nav" aria-label="Navigazione principale"><button data-action="portfolio">ADV PORTFOLIO</button><button data-action="play">PLAY</button><button data-action="personal">CREATIVITÀ</button></nav><a class="header-contact" href="https://www.linkedin.com/in/matteo-tirocchi-663528273/" target="_blank" rel="noreferrer">SCRIVIMI ↗</a></header>
+        <div id="boot-screen" class="boot-screen"><div class="boot-mark">MATTEO TIROCCHI<span>®</span></div><p class="mono">PORTFOLIO RUSH / AVVIO</p><div class="boot-bar"><i></i></div></div>
+        <div id="game-start" class="game-start" hidden><div class="game-start-content"><div class="start-kicker mono">PORTFOLIO RUSH</div><h1 id="game-title">SCEGLI<br>COME ENTRARE</h1><p>Gioca l’esperienza o vai subito ai lavori.</p><div class="game-start-actions"><button id="start-game" class="primary-button">INIZIA <span>↗</span></button><button class="text-button start-secondary" data-action="portfolio">VEDI I LAVORI ↗</button><button class="text-button start-back" data-action="home">← TORNA ALLA CONSOLE</button></div></div></div>
+        <div id="game-wrap" class="game-wrap" hidden>
+          <div class="game-topbar"><span id="ideas-counter">IDEAS 0/10</span><span id="game-stage-label">LIVELLO 01 — BRIEF</span><span id="time-counter">TIME 00:00</span><button class="mobile-game-exit" data-action="home">ESCI</button></div>
+          <div class="game-screen">
+            <canvas id="game-canvas" width="1280" height="600" aria-label="Videogioco platform Portfolio Rush"></canvas>
+            <div id="game-message" class="game-message" role="status" aria-live="assertive" hidden></div>
+          </div>
+          <p id="game-status" class="sr-only" role="status" aria-live="polite">Livello pronto. Muoviti con sinistra e destra; premi A o spazio per saltare.</p>
+          <div class="game-bottom"><span>A / D oppure ← → MUOVI</span><span>SPAZIO SALTA</span><button class="text-button" data-action="home">ESCI DAL GIOCO</button></div>
+          <div class="touch-controls" aria-label="Controller touch in stile Game Boy Advance">
+            <div class="gba-shell-mark" aria-hidden="true"><span>MATTEO</span><b>ADVANCE</b><i>PORTFOLIO RUSH</i></div>
+            <div class="gba-control-row">
+              <div class="gba-dpad" role="group" aria-label="Croce direzionale">
+                <button class="gba-dir gba-left" data-key="left" aria-label="Muovi a sinistra">◀</button>
+                <span class="gba-dpad-center" aria-hidden="true"></span>
+                <button class="gba-dir gba-right" data-key="right" aria-label="Muovi a destra">▶</button>
+              </div>
+              <div class="gba-action-keys" role="group" aria-label="Pulsanti azione">
+                <button class="gba-action gba-b" data-key="retry" aria-label="B: riprova dall’ultimo punto">B</button>
+                <button class="gba-action gba-a" data-key="jump" aria-label="A: salta">A</button>
+              </div>
+            </div>
+            <div class="gba-system-keys" aria-hidden="true"><span>SELECT</span><i></i><span>START</span></div>
+          </div>
+        </div>
+        <div id="game-complete" class="game-complete" hidden><div class="start-kicker mono">LIVELLO 01 — BRIEF</div><h1>OBIETTIVO COMPLETATO</h1><div class="result-grid"><div><span>IDEE TROVATE</span><strong id="final-ideas">07/10</strong></div><div><span>TIME</span><strong id="final-time">01:48</strong></div></div><p class="next-objective"><strong>VUOI SBLOCCARE IL LIVELLO 02?</strong><br />Assumimi. Il prossimo progetto potremmo farlo insieme.</p><button id="continue-game" class="primary-button" data-action="portfolio">SCOPRI IL MIO PORTFOLIO <span>↗</span></button></div>
+      </section>
+    </main>
+    <script src="/personal-galleries.js" defer></script>
+    <script src="/app.js?v=d131d71" defer></script>
+  </body>
+</html>

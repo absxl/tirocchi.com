@@ -1,0 +1,1874 @@
+{
+  "/assets/adv/glued-together/cover.webp": {
+    "width": 1600,
+    "height": 900,
+    "avif": [
+      {
+        "src": "/assets/adv/glued-together/cover.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/glued-together/cover.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/adv/glued-together/cover.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/adv/glued-together/cover.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/glued-together/cover.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/adv/glued-together/cover.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/adv/glued-together/hero.jpg": {
+    "width": 1870,
+    "height": 841,
+    "avif": [
+      {
+        "src": "/assets/adv/glued-together/hero.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/glued-together/hero.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/adv/glued-together/hero.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/adv/glued-together/hero.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/glued-together/hero.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/adv/glued-together/hero.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/adv/duo-nobel-2/cover-web.jpg": {
+    "width": 2400,
+    "height": 1350,
+    "avif": [
+      {
+        "src": "/assets/adv/duo-nobel-2/cover-web.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/duo-nobel-2/cover-web.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/adv/duo-nobel-2/cover-web.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/adv/duo-nobel-2/cover-web.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/duo-nobel-2/cover-web.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/adv/duo-nobel-2/cover-web.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/adv/duo-nobel/cover.webp": {
+    "width": 1896,
+    "height": 829,
+    "avif": [
+      {
+        "src": "/assets/adv/duo-nobel/cover.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/duo-nobel/cover.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/adv/duo-nobel/cover.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/adv/duo-nobel/cover.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/duo-nobel/cover.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/adv/duo-nobel/cover.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/adv/exit-strategy/cover.jpg": {
+    "width": 1402,
+    "height": 1122,
+    "avif": [
+      {
+        "src": "/assets/adv/exit-strategy/cover.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/exit-strategy/cover.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/adv/exit-strategy/cover.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/exit-strategy/cover.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/adv/liquid-death/cover.webp": {
+    "width": 1920,
+    "height": 1502,
+    "avif": [
+      {
+        "src": "/assets/adv/liquid-death/cover.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/liquid-death/cover.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/adv/liquid-death/cover.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/adv/liquid-death/cover.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/liquid-death/cover.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/adv/liquid-death/cover.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/adv/incensurati/cover.png": {
+    "width": 1672,
+    "height": 941,
+    "avif": [
+      {
+        "src": "/assets/adv/incensurati/cover.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/incensurati/cover.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/adv/incensurati/cover.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/adv/incensurati/cover.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/incensurati/cover.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/adv/incensurati/cover.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/adv/redbull-last-dance/cover.webp": {
+    "width": 1600,
+    "height": 900,
+    "avif": [
+      {
+        "src": "/assets/adv/redbull-last-dance/cover.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/redbull-last-dance/cover.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/adv/redbull-last-dance/cover.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/adv/redbull-last-dance/cover.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/redbull-last-dance/cover.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/adv/redbull-last-dance/cover.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/adv/redbull-last-dance/hero.jpg": {
+    "width": 1870,
+    "height": 841,
+    "avif": [
+      {
+        "src": "/assets/adv/redbull-last-dance/hero.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/redbull-last-dance/hero.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/adv/redbull-last-dance/hero.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/adv/redbull-last-dance/hero.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/redbull-last-dance/hero.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/adv/redbull-last-dance/hero.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/adv/wise/cover.webp": {
+    "width": 1448,
+    "height": 1086,
+    "avif": [
+      {
+        "src": "/assets/adv/wise/cover.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/wise/cover.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/adv/wise/cover.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/wise/cover.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/adv/wise/hero.webp": {
+    "width": 1916,
+    "height": 821,
+    "avif": [
+      {
+        "src": "/assets/adv/wise/hero.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/wise/hero.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/adv/wise/hero.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/adv/wise/hero.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/adv/wise/hero.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/adv/wise/hero.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/personal-cover-ai-shooting.jpg": {
+    "width": 900,
+    "height": 1200,
+    "avif": [
+      {
+        "src": "/assets/personal-cover-ai-shooting.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-cover-ai-shooting.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/cover-art/00002.jpg": {
+    "width": 1800,
+    "height": 1800,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/cover-art/00002.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-gallery/cover-art/00002.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/personal-gallery/cover-art/00002.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/cover-art/00002.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-gallery/cover-art/00002.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/personal-gallery/cover-art/00002.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/personal-cover-photography.png": {
+    "width": 1280,
+    "height": 721,
+    "avif": [
+      {
+        "src": "/assets/personal-cover-photography.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-cover-photography.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-cover-photography.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-cover-photography.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/personal-video/posters/video-category-cover.png": {
+    "width": 2560,
+    "height": 1440,
+    "avif": [
+      {
+        "src": "/assets/personal-video/posters/video-category-cover.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/video-category-cover.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/personal-video/posters/video-category-cover.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-video/posters/video-category-cover.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/video-category-cover.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/personal-video/posters/video-category-cover.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/personal-video/posters/video-ai-category.jpg": {
+    "width": 1200,
+    "height": 676,
+    "avif": [
+      {
+        "src": "/assets/personal-video/posters/video-ai-category.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/video-ai-category.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-video/posters/video-ai-category.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/video-ai-category.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/personal-experiments/experiment-01.webp": {
+    "width": 1920,
+    "height": 1281,
+    "avif": [
+      {
+        "src": "/assets/personal-experiments/experiment-01.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-01.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-01.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-experiments/experiment-01.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-01.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-01.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/personal-gallery/ai-art/thumbs/00000.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00000.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00000.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/ai-art/thumbs/00005.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00005.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00005.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/ai-art/thumbs/00010.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00010.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00010.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/ai-art/thumbs/00011.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00011.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00011.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/ai-art/thumbs/00014.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00014.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00014.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/ai-art/thumbs/00015.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00015.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00015.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/ai-art/thumbs/00017.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00017.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00017.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/ai-art/thumbs/00018.jpg": {
+    "width": 480,
+    "height": 320,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00018.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00018.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/ai-art/thumbs/00019.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00019.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00019.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/ai-art/thumbs/00020.jpg": {
+    "width": 480,
+    "height": 360,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00020.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00020.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/ai-art/thumbs/00031.jpg": {
+    "width": 480,
+    "height": 480,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00031.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00031.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/ai-art/thumbs/00032.jpg": {
+    "width": 480,
+    "height": 480,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00032.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/ai-art/thumbs/00032.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/cover-art/thumbs/00000.jpg": {
+    "width": 480,
+    "height": 478,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00000.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00000.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/cover-art/thumbs/00001.jpg": {
+    "width": 480,
+    "height": 480,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00001.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00001.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/cover-art/thumbs/00002.jpg": {
+    "width": 480,
+    "height": 480,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00002.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00002.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/cover-art/thumbs/00003.jpg": {
+    "width": 480,
+    "height": 480,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00003.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00003.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/cover-art/thumbs/00004.jpg": {
+    "width": 480,
+    "height": 480,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00004.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00004.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/cover-art/thumbs/00005.jpg": {
+    "width": 480,
+    "height": 480,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00005.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00005.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/cover-art/thumbs/00006.jpg": {
+    "width": 480,
+    "height": 480,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00006.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00006.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/cover-art/thumbs/00007.jpg": {
+    "width": 480,
+    "height": 480,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00007.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00007.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/cover-art/thumbs/00008.jpg": {
+    "width": 480,
+    "height": 480,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00008.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00008.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/cover-art/thumbs/00009.jpg": {
+    "width": 480,
+    "height": 480,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00009.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00009.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/cover-art/thumbs/00010.jpg": {
+    "width": 480,
+    "height": 480,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00010.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00010.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/cover-art/thumbs/00011.jpg": {
+    "width": 480,
+    "height": 480,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00011.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00011.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/cover-art/thumbs/00012.jpg": {
+    "width": 480,
+    "height": 480,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00012.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/cover-art/thumbs/00012.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00038.jpg": {
+    "width": 640,
+    "height": 360,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00038.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00038.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00037.jpg": {
+    "width": 640,
+    "height": 360,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00037.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00037.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00032.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00032.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00032.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00031.jpg": {
+    "width": 480,
+    "height": 480,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00031.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00031.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00030.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00030.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00030.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00029.jpg": {
+    "width": 480,
+    "height": 480,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00029.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00029.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00028.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00028.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00028.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00027.jpg": {
+    "width": 480,
+    "height": 480,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00027.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00027.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00025.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00025.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00025.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00022.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00022.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00022.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00021.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00021.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00021.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00016.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00016.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00016.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00013.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00013.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00013.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00011.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00011.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00011.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00010.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00010.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00010.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00009.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00009.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00009.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00008.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00008.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00008.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00007.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00007.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00007.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00006.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00006.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00006.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00004.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00004.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00004.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00003.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00003.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00003.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-gallery/photography/thumbs/00000.jpg": {
+    "width": 480,
+    "height": 270,
+    "avif": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00000.opt-480.avif",
+        "width": 480
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-gallery/photography/thumbs/00000.opt-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "/assets/personal-experiments/motion-study-poster.webp": {
+    "width": 960,
+    "height": 540,
+    "avif": [
+      {
+        "src": "/assets/personal-experiments/motion-study-poster.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/motion-study-poster.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-experiments/motion-study-poster.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/motion-study-poster.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/personal-experiments/experiment-02.webp": {
+    "width": 1920,
+    "height": 1080,
+    "avif": [
+      {
+        "src": "/assets/personal-experiments/experiment-02.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-02.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-02.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-experiments/experiment-02.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-02.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-02.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/personal-experiments/experiment-04.webp": {
+    "width": 3000,
+    "height": 3000,
+    "avif": [
+      {
+        "src": "/assets/personal-experiments/experiment-04.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-04.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-04.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-experiments/experiment-04.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-04.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-04.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/personal-experiments/experiment-05.webp": {
+    "width": 1080,
+    "height": 1350,
+    "avif": [
+      {
+        "src": "/assets/personal-experiments/experiment-05.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-05.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-experiments/experiment-05.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-05.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/personal-experiments/experiment-06.webp": {
+    "width": 1080,
+    "height": 1350,
+    "avif": [
+      {
+        "src": "/assets/personal-experiments/experiment-06.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-06.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-experiments/experiment-06.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-06.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/personal-experiments/experiment-07.webp": {
+    "width": 1254,
+    "height": 1254,
+    "avif": [
+      {
+        "src": "/assets/personal-experiments/experiment-07.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-07.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-experiments/experiment-07.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-07.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/personal-experiments/experiment-08.webp": {
+    "width": 1080,
+    "height": 1350,
+    "avif": [
+      {
+        "src": "/assets/personal-experiments/experiment-08.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-08.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-experiments/experiment-08.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-08.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/personal-experiments/experiment-09.webp": {
+    "width": 1080,
+    "height": 1350,
+    "avif": [
+      {
+        "src": "/assets/personal-experiments/experiment-09.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-09.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-experiments/experiment-09.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-09.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/personal-experiments/experiment-10.webp": {
+    "width": 1344,
+    "height": 2016,
+    "avif": [
+      {
+        "src": "/assets/personal-experiments/experiment-10.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-10.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-experiments/experiment-10.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-10.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/personal-experiments/experiment-11.webp": {
+    "width": 1920,
+    "height": 1080,
+    "avif": [
+      {
+        "src": "/assets/personal-experiments/experiment-11.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-11.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-11.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-experiments/experiment-11.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-11.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-11.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/personal-experiments/experiment-12.webp": {
+    "width": 1920,
+    "height": 1080,
+    "avif": [
+      {
+        "src": "/assets/personal-experiments/experiment-12.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-12.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-12.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-experiments/experiment-12.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-12.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-12.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/personal-experiments/experiment-13.webp": {
+    "width": 1344,
+    "height": 2016,
+    "avif": [
+      {
+        "src": "/assets/personal-experiments/experiment-13.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-13.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-experiments/experiment-13.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-13.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/personal-experiments/experiment-14.webp": {
+    "width": 1920,
+    "height": 1080,
+    "avif": [
+      {
+        "src": "/assets/personal-experiments/experiment-14.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-14.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-14.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-experiments/experiment-14.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-14.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-14.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/personal-experiments/experiment-15.webp": {
+    "width": 1920,
+    "height": 1080,
+    "avif": [
+      {
+        "src": "/assets/personal-experiments/experiment-15.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-15.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-15.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-experiments/experiment-15.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-15.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/personal-experiments/experiment-15.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/personal-video/posters/giorno-j.jpg": {
+    "width": 1087,
+    "height": 720,
+    "avif": [
+      {
+        "src": "/assets/personal-video/posters/giorno-j.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/giorno-j.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-video/posters/giorno-j.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/giorno-j.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/personal-video/posters/giorno-stamina.jpg": {
+    "width": 1280,
+    "height": 720,
+    "avif": [
+      {
+        "src": "/assets/personal-video/posters/giorno-stamina.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/giorno-stamina.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-video/posters/giorno-stamina.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/giorno-stamina.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/personal-video/posters/giorno-valle-giulia.jpg": {
+    "width": 1280,
+    "height": 720,
+    "avif": [
+      {
+        "src": "/assets/personal-video/posters/giorno-valle-giulia.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/giorno-valle-giulia.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-video/posters/giorno-valle-giulia.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/giorno-valle-giulia.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/personal-video/posters/attitude-x-gios.jpg": {
+    "width": 1280,
+    "height": 720,
+    "avif": [
+      {
+        "src": "/assets/personal-video/posters/attitude-x-gios.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/attitude-x-gios.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-video/posters/attitude-x-gios.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/attitude-x-gios.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/personal-video/posters/kimori-firework.jpg": {
+    "width": 1280,
+    "height": 720,
+    "avif": [
+      {
+        "src": "/assets/personal-video/posters/kimori-firework.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/kimori-firework.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-video/posters/kimori-firework.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/kimori-firework.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/personal-video/posters/video-ai-0929-01.jpg": {
+    "width": 1200,
+    "height": 676,
+    "avif": [
+      {
+        "src": "/assets/personal-video/posters/video-ai-0929-01.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/video-ai-0929-01.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-video/posters/video-ai-0929-01.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/video-ai-0929-01.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/personal-video/posters/video-ai-0929.jpg": {
+    "width": 1200,
+    "height": 676,
+    "avif": [
+      {
+        "src": "/assets/personal-video/posters/video-ai-0929.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/video-ai-0929.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-video/posters/video-ai-0929.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/video-ai-0929.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/personal-video/posters/video-ai-0930.jpg": {
+    "width": 1200,
+    "height": 676,
+    "avif": [
+      {
+        "src": "/assets/personal-video/posters/video-ai-0930.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/video-ai-0930.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-video/posters/video-ai-0930.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/video-ai-0930.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/personal-video/posters/video-ai-showreel.jpg": {
+    "width": 1200,
+    "height": 676,
+    "avif": [
+      {
+        "src": "/assets/personal-video/posters/video-ai-showreel.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/video-ai-showreel.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-video/posters/video-ai-showreel.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/video-ai-showreel.opt-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/assets/personal-video/posters/video-ai-bergoz.jpg": {
+    "width": 1200,
+    "height": 676,
+    "avif": [
+      {
+        "src": "/assets/personal-video/posters/video-ai-bergoz.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/video-ai-bergoz.opt-960.avif",
+        "width": 960
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/personal-video/posters/video-ai-bergoz.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/personal-video/posters/video-ai-bergoz.opt-960.webp",
+        "width": 960
+      }
+    ]
+  }
+}
