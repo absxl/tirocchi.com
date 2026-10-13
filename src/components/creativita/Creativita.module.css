@@ -104,7 +104,10 @@
 /* Viewer */
 .viewer {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100dvh;
   z-index: 90;
   background: color-mix(in srgb, var(--bg) 96%, transparent);
   display: grid;
@@ -140,18 +143,17 @@
 }
 
 .viewerMedia {
-  display: grid;
-  place-items: center;
-  padding: var(--space-m);
+  position: relative;
   min-height: 0;
+  overflow: hidden;
+  padding: var(--space-m);
 }
 
+/* Fill the media area and scale the image to fit it (no overflow). */
 .viewerMedia img,
 .viewerMedia video {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
