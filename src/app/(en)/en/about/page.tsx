@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { AboutView } from "@/components/pages/SimplePages";
 import { getSite } from "@/lib/content";
+import { getGallery } from "@/lib/gallery";
 import { getDictionary, routes } from "@/lib/i18n";
 import { pageAlternates } from "@/lib/site-url";
 
@@ -12,5 +13,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <AboutView lang="en" site={getSite()} />;
+  const strip = getGallery()
+    .items.filter((item) => ["photography", "cover-art", "experiments", "ai-art"].includes(item.category))
+    .slice(0, 12)
+    .map((item) => ({ image: item.image, title: item.title }));
+  return <AboutView lang="en" site={getSite()} strip={strip} />;
 }

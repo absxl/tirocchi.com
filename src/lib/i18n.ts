@@ -117,6 +117,7 @@ const it = {
   about: {
     eyebrow: "Chi sono",
     title: "Chi sono",
+    manifesto: "Comunicazione visiva, dal concept alla produzione finale.",
     profile: "Profilo",
     experience: "Esperienza professionale",
     education: "Istruzione e formazione",
@@ -236,6 +237,7 @@ const en: typeof it = {
   about: {
     eyebrow: "Who I am",
     title: "About",
+    manifesto: "Visual communication, from concept to final production.",
     profile: "Profile",
     experience: "Professional experience",
     education: "Education and training",

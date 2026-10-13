@@ -14,7 +14,8 @@ export function Footer({ lang, site }: { lang: Locale; site: SiteInfo }) {
   const year = new Date().getFullYear();
   const isHome = pathname === href(lang, "home");
   const isContact = pathname === href(lang, "contatti");
-  const hideSocial = isHome || isContact;
+  const isAbout = pathname === href(lang, "about");
+  const hideSocial = isHome || isContact || isAbout;
 
   const socials = [
     { label: "Instagram", url: site.social.instagram },

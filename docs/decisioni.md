@@ -156,6 +156,10 @@ Sintesi delle scelte fatte e del perché, in coerenza con i file 03 (landing), 0
   "Competenze trasversali"). Social **deduplicati** in About/Contatti (footer nascosto lì).
 - **Mobile**: header/menu raggiungibile in cima alla home, scrim più leggero, `100dvh` per coprire
   il fondo (niente "box colorato"), fondo meno affollato (frecce nascoste, social sopra i capitoli).
+- **"Chi sono" ridisegnata**: hero con **ritratto** (rotazione tra i 3 sfondi), **manifesto** in
+  display, **sezioni numerate**, **timeline** esperienza/formazione **senza divisori**, competenze
+  come **card in vetro**, **social grandi con logo** (come la mail), **striscia immagini** in fondo;
+  reveal allo scroll (tutto con `prefers-reduced-motion`).
 
 ## Lingue
 
