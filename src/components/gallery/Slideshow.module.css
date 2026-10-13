@@ -2,6 +2,8 @@
   position: relative;
   display: grid;
   gap: var(--space-m);
+  /* Clip the horizontally-overflowing track so it can't widen the page. */
+  overflow: hidden;
 }
 
 .track {

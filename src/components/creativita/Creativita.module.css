@@ -2,6 +2,7 @@
   padding-block: var(--space-l) var(--space-xl);
   display: grid;
   gap: var(--space-l);
+  overflow-x: clip;
 }
 
 .head {
