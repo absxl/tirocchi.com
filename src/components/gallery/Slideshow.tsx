@@ -35,8 +35,10 @@ export function Slideshow({
   nextLabel: string;
   sizes?: string;
 }) {
-  const twoUp = useMediaQuery("(min-width: 768px)");
-  const perView = twoUp ? 2 : 1;
+  // Smaller covers: 3 per view on desktop, 2 on tablet, 1 on mobile.
+  const wide = useMediaQuery("(min-width: 1024px)");
+  const mid = useMediaQuery("(min-width: 640px)");
+  const perView = wide ? 3 : mid ? 2 : 1;
   const maxIndex = Math.max(0, items.length - perView);
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
