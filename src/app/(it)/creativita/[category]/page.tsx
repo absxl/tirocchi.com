@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CategoryView } from "@/components/creativita/CategoryView";
-import { getArchiveCategory, getArchiveItems, getPersonal } from "@/lib/content";
+import { getGallery, getGalleryCategory, getGalleryItems } from "@/lib/gallery";
 import { pageAlternates } from "@/lib/site-url";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return getPersonal().categories.map((category) => ({ category: category.slug }));
+  return getGallery().categories.map((category) => ({ category: category.slug }));
 }
 
 export async function generateMetadata({
@@ -16,7 +16,7 @@ export async function generateMetadata({
   params: Promise<{ category: string }>;
 }): Promise<Metadata> {
   const { category: slug } = await params;
-  const category = getArchiveCategory(slug);
+  const category = getGalleryCategory(slug);
   if (!category) return {};
   return {
     title: category.title,
@@ -35,7 +35,7 @@ export default async function Page({
   params: Promise<{ category: string }>;
 }) {
   const { category: slug } = await params;
-  const category = getArchiveCategory(slug);
+  const category = getGalleryCategory(slug);
   if (!category) notFound();
-  return <CategoryView lang="it" category={category} items={getArchiveItems(slug)} />;
+  return <CategoryView lang="it" category={category} items={getGalleryItems(slug)} />;
 }

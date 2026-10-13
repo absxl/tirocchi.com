@@ -15,6 +15,14 @@
   text-transform: uppercase;
 }
 
+.role {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--fg-dim);
+}
+
 .lead {
   max-width: var(--maxw-text);
   font-size: var(--step-2);
@@ -52,6 +60,48 @@
 
 .email:hover {
   color: var(--accent);
+}
+
+.phone {
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  transition: color var(--dur) var(--ease);
+}
+
+.phone:hover {
+  color: var(--accent);
+}
+
+.entries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-m);
+}
+
+.entry {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.entryHead {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.entryHead strong {
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.entryDetail {
+  color: var(--fg-dim);
+  line-height: 1.55;
 }
 
 .placeholder {

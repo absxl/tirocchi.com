@@ -11,44 +11,19 @@ export interface Room {
   accent: string;
 }
 
-interface ProjectLike {
-  slug: string;
-  client: string;
-  title: string;
-  cover: string;
-  hero?: string;
-}
-
-interface CategoryLike {
-  slug: string;
-  title: string;
-  cover: string;
-}
-
-export function buildRooms({
-  lang,
-  projects,
-  categories,
-  dict,
-}: {
-  lang: Locale;
-  projects: ProjectLike[];
-  categories: CategoryLike[];
-  dict: Dictionary;
-}): Room[] {
-  const introImage =
-    projects[0]?.hero ??
-    projects[0]?.cover ??
-    categories[0]?.cover ??
-    "/assets/personal-cover-ai-shooting.jpg";
-
+/**
+ * Home chapters. Each section uses a distinct background image so no photo is
+ * repeated: intro = black, Portfolio = portrait 2, Creatività = portrait 3,
+ * About = portrait 1, Contatti = off-theme project image (2560×1440) shown last.
+ */
+export function buildRooms({ lang, dict }: { lang: Locale; dict: Dictionary }): Room[] {
   return [
     {
       id: "intro",
       label: dict.landing.name,
       desc: dict.landing.roleLine,
       href: href(lang, "home"),
-      image: introImage,
+      image: "/assets/sfondi/black.webp",
       accent: ACCENT.default,
     },
     {
@@ -56,23 +31,15 @@ export function buildRooms({
       label: dict.nav.lavori,
       desc: dict.landing.sectionDesc.lavori,
       href: href(lang, "lavori"),
-      image: projects[0]?.hero ?? projects[0]?.cover ?? introImage,
+      image: "/assets/sfondi/2.png",
       accent: ACCENT.lavori,
-    },
-    {
-      id: "play",
-      label: dict.nav.play,
-      desc: dict.landing.sectionDesc.play,
-      href: href(lang, "play"),
-      image: "/assets/level-01-sheet.png",
-      accent: ACCENT.play,
     },
     {
       id: "creativita",
       label: dict.nav.creativita,
       desc: dict.landing.sectionDesc.creativita,
       href: href(lang, "creativita"),
-      image: categories[0]?.cover ?? introImage,
+      image: "/assets/sfondi/3.png",
       accent: ACCENT.creativita,
     },
     {
@@ -80,7 +47,7 @@ export function buildRooms({
       label: dict.nav.about,
       desc: dict.landing.sectionDesc.about,
       href: href(lang, "about"),
-      image: "/assets/personal-cover-photography.png",
+      image: "/assets/sfondi/1.png",
       accent: ACCENT.about,
     },
     {
@@ -88,7 +55,7 @@ export function buildRooms({
       label: dict.nav.contatti,
       desc: dict.landing.sectionDesc.contatti,
       href: href(lang, "contatti"),
-      image: "/assets/personal-cover-ai-shooting.jpg",
+      image: "/assets/sfondi/portfolio.webp",
       accent: ACCENT.contatti,
     },
   ];

@@ -1870,5 +1870,165 @@
         "width": 960
       }
     ]
+  },
+  "/assets/sfondi/1.png": {
+    "width": 1920,
+    "height": 1080,
+    "avif": [
+      {
+        "src": "/assets/sfondi/1.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/sfondi/1.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/sfondi/1.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/sfondi/1.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/sfondi/1.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/sfondi/1.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/sfondi/2.png": {
+    "width": 1920,
+    "height": 1080,
+    "avif": [
+      {
+        "src": "/assets/sfondi/2.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/sfondi/2.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/sfondi/2.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/sfondi/2.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/sfondi/2.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/sfondi/2.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/sfondi/3.png": {
+    "width": 1920,
+    "height": 1080,
+    "avif": [
+      {
+        "src": "/assets/sfondi/3.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/sfondi/3.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/sfondi/3.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/sfondi/3.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/sfondi/3.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/sfondi/3.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/sfondi/black.webp": {
+    "width": 1600,
+    "height": 1000,
+    "avif": [
+      {
+        "src": "/assets/sfondi/black.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/sfondi/black.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/sfondi/black.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/sfondi/black.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/sfondi/black.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/sfondi/black.opt-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/assets/sfondi/portfolio.webp": {
+    "width": 2560,
+    "height": 1440,
+    "avif": [
+      {
+        "src": "/assets/sfondi/portfolio.opt-480.avif",
+        "width": 480
+      },
+      {
+        "src": "/assets/sfondi/portfolio.opt-960.avif",
+        "width": 960
+      },
+      {
+        "src": "/assets/sfondi/portfolio.opt-1600.avif",
+        "width": 1600
+      }
+    ],
+    "webp": [
+      {
+        "src": "/assets/sfondi/portfolio.opt-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/sfondi/portfolio.opt-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/sfondi/portfolio.opt-1600.webp",
+        "width": 1600
+      }
+    ]
   }
 }

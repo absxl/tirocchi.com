@@ -2,9 +2,9 @@
   "name": "Matteo Tirocchi",
   "role": "Art Director",
   "tagline": "ADV Portfolio",
-  "location": "[DA COMPILARE]",
-  "email": "[DA COMPILARE]",
-  "bio": "[DA COMPILARE]",
+  "location": "Roma, Italia",
+  "email": "matteo@tirocchi.com",
+  "bio": "Junior Art Director con esperienza nella comunicazione visiva e nello sviluppo di concept creativi. Lavoro tra art direction, graphic design, identità visiva e post-produzione. Collaboro con small brand, artisti musicali, label indipendenti, realtà culturali e organizzazioni locali, sviluppando progetti di comunicazione visiva dalla fase di concept alla produzione finale.",
   "social": {
     "instagram": "https://www.instagram.com/shinji.pdn/",
     "behance": "https://www.behance.net/matteoshinji",
@@ -12,8 +12,59 @@
   },
   "skills": [
     "Art Direction",
-    "Advertising",
-    "[DA COMPILARE]"
+    "Graphic Design",
+    "Concept Development",
+    "Visual Identity",
+    "Post-produzione fotografica",
+    "Adobe Creative Suite",
+    "AI generativa applicata al processo creativo"
+  ],
+  "softSkills": [
+    "Ascolto attivo e comprensione delle richieste",
+    "Collaborazione efficace in team",
+    "Capacità di adattarsi a persone e contesti diversi",
+    "Gestione dei feedback e delle revisioni",
+    "Capacità di presentare e sostenere le proprie idee",
+    "Flessibilità nelle dinamiche di gruppo"
+  ],
+  "experience": [
+    {
+      "period": "2022 – in corso",
+      "role": "Freelance Graphic Designer / Art Director",
+      "detail": "Sviluppo di identità visive, campagne, cover artwork, materiali editoriali e contenuti digitali. Art direction e post-produzione per progetti fotografici, musicali e promozionali. Progettazione di materiali per social media, stampa, eventi e comunicazione territoriale. Collaborazioni con artisti, collettivi creativi, label indipendenti, small brand e realtà politiche locali. Gestione autonoma di brief, revisioni, scadenze e consegne. Utilizzo di Adobe Creative Suite, Figma e strumenti di AI generativa all’interno del workflow creativo. Ho organizzato piccoli eventi musicali a Roma."
+    },
+    {
+      "period": "2025",
+      "role": "Zoomarine — Servizi generali",
+      "detail": "Attività operative e di manutenzione del parco, gestione dei flussi nei parcheggi e assistenza agli ospiti. Collaborazione con differenti squadre operative in un ambiente ad alta affluenza, lavorando su turni e nel rispetto delle procedure di sicurezza."
+    },
+    {
+      "period": "2022 – 2023",
+      "role": "Stabilimento balneare Le Sirene",
+      "detail": "Gestione operativa e logistica dell’area spiaggia e assistenza alla clientela."
+    },
+    {
+      "period": "2020 – 2021",
+      "role": "Stabilimento balneare Bellavista",
+      "detail": "Gestione operativa e logistica dell’area spiaggia e assistenza alla clientela."
+    }
+  ],
+  "education": [
+    {
+      "year": "2025",
+      "title": "Master Creative Direction",
+      "institution": "IED Milano"
+    },
+    {
+      "year": "2025",
+      "title": "Laurea triennale Design",
+      "institution": "Università Sapienza di Roma"
+    },
+    {
+      "year": "2021",
+      "title": "Diploma di Liceo Scientifico — Scienze Applicate",
+      "institution": "Nettuno"
+    }
   ],
   "awards": [],
   "legal": {

@@ -17,7 +17,7 @@ import { useScrolledPast } from "@/lib/useScrolledPast";
 import { useScrollProgress } from "@/lib/useScrollProgress";
 import styles from "./Header.module.css";
 
-const NAV_KEYS: NavKey[] = ["lavori", "creativita", "play", "about", "contatti"];
+const NAV_KEYS: NavKey[] = ["lavori", "creativita", "about", "contatti"];
 
 export function Header({ lang }: { lang: Locale }) {
   const dict = getDictionary(lang);

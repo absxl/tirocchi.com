@@ -9,6 +9,6 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  const { projects, categories, social } = getLandingData();
-  return <Landing lang="en" projects={projects} categories={categories} social={social} />;
+  const { social } = getLandingData();
+  return <Landing lang="en" social={social} />;
 }

@@ -9,7 +9,7 @@ Sintesi delle scelte fatte e del perché, in coerenza con i file 03 (landing), 0
   `--accent`** con `color-mix` in `tokens.css`. Cambiando solo l'accento cambia tutto il sito.
   - `--bg` 7% accento · `--bg-elev` 11% · `--bg-elev-2` 15% · `--line` 20% · `--line-strong` 28% ·
     `--fg-dim` 26% · `--fg-faint` 18% (miscelati su neutri scuri).
-  - Accenti: intro `#3b82f6` · Lavori `#ff6a3d` · Play `#ffd166` · Creatività `#a78bfa` ·
+  - Accenti: intro `#3b82f6` · ADV Portfolio `#ff6a3d` · Creatività `#a78bfa` ·
     About `#22d3ee` · Contatti `#ff5c8a`; `--accent-ink` scuro per il testo su accento.
   - Contrasti verificati: secondario su sfondo tinto 7.6–9.3:1, ink su accento 5.4–13.9:1 (AA).
 - **Transizione fluida** del colore: `@property --accent { syntax: "<color>" }` + `transition` su
@@ -27,8 +27,8 @@ Sintesi delle scelte fatte e del perché, in coerenza con i file 03 (landing), 0
   `--line-strong rgba(219,226,235,.38)`.
 - **Font**: sulle pagine interne il testo passa a **Inter** (Fontsource variable, stesso Inter di
   Google) mentre le etichette restano Space Mono; in home restano Bricolage + Space Mono.
-- **Accenti per sezione** (famiglia del vecchio sito, con ink scuro): Lavori `#abc8ee` ·
-  Play `#f2d7a2` · Creatività `#9b8cd6` · About `#6b8fbf` · Contatti `#d4695e`.
+- **Accenti per sezione** (famiglia del vecchio sito, con ink scuro): ADV Portfolio `#abc8ee` ·
+  Creatività `#9b8cd6` · About `#6b8fbf` · Contatti `#d4695e`.
   Contrasti verificati: ink su accento 5.4–13.7:1, secondario su sfondo 6.9:1 (AA).
 - **Motivi**: overlay **noise a puntini** (4px, `mix-blend-mode: screen`) e **vignette** fissa
   (radial + linear) come nel vecchio sito.
@@ -56,8 +56,8 @@ Sintesi delle scelte fatte e del perché, in coerenza con i file 03 (landing), 0
 - **Preloader cinematografico**: progresso reale (font + prima texture della stanza + tempo minimo),
   **tendina** con `clip-path` che scopre la scena. Mostrato una volta per sessione; nascosto senza JS.
 - **Home a "stanze" (WebGL)**: canvas full-screen con shader **pseudo-360** (pan verticale + cover
-  mapping, niente distorsione) e **crossfade** tra stanze. Una stanza per sezione (intro, Lavori,
-  Play, Creatività, About, Contatti). Per ogni sezione, a **sinistra**, un **pannello** con numero,
+  mapping, niente distorsione) e **crossfade** tra stanze. Una stanza per sezione (intro, ADV
+  Portfolio, Creatività, About, Contatti). Per ogni sezione, a **sinistra**, un **pannello** con numero,
   titolo, descrizione e **box CTA** che porta alla pagina (testo centrato, titolo grande).
   **Menu capitoli** centrato in basso, frecce e tastiera. Fallback senza WebGL/JS/reduced-motion:
   immagine statica + lista di link.
@@ -74,19 +74,21 @@ Sintesi delle scelte fatte e del perché, in coerenza con i file 03 (landing), 0
 
 ## Layout (file 04)
 
-- `/lavori`: griglia `auto-fill` (3 col ≥1200px, 2 ≥640px, 1 sotto), card a **rapporto 1:1
-  (quadrate)**, **filtri** Tutti/ADV/Personal/Play (stato in `?cat=`) e **toggle Griglia/Lista**
-  (stato in `?view=`).
+- `/lavori`: **slideshow** (2 slide su desktop, 1 su mobile) con **autoplay ~4s** (pausa su
+  hover/focus/drag), frecce, tastiera e swipe; card a **rapporto 4:5**. **Nessun filtro**
+  (ci sono solo progetti ADV). **Toggle Slideshow/Lista** (stato in `?view=`).
 - Vista **Lista** = righe testuali (titolo + cliente) con **anteprima immagine quadrata che segue il
   cursore** su desktop (equivalente dello stile nicparanoia), disattivata su touch.
 - `/lavori/[slug]`: header con cliente/anno/ruolo/formati, intro, sezioni Contesto/Insight/Idea/
   Sviluppo, **galleria a colonna unica**: immagini a piena larghezza, rapporto naturale e
   **attaccate (gap 0), senza divisori** (come il vecchio sito); hero separato; crediti, navigazione
   precedente/successivo + "Tutti i lavori". Video con `poster` e `preload="metadata"`.
-- `/creativita`: indice categorie (copertine **quadrate**) + **reel copertine esplorabile col
-  cursore**; `/creativita/[categoria]`: **griglia quadrata stile archivio del vecchio sito**
-  (5/4/3 colonne, gap 3px/2px, senza didascalie, hover con outline) con **viewer** accessibile
-  (dialog, ESC, tastiera ← →, precedente/successiva).
+- `/creativita`: indice a **griglia di card-categoria** + **reel copertine esplorabile col cursore**;
+  `/creativita/[categoria]`: **slideshow** (2/1, autoplay + manuale) con **tutte le immagini della
+  categoria** e **viewer** accessibile al click (dialog, ESC, tastiera ← →).
+- **Galleria procedurale**: le categorie e le immagini di Creatività sono generate da tutto il sito
+  (`src/lib/gallery.ts`) — progetti ADV (cover + immagini), categorie dell'archivio personale,
+  sfondi di sezione — assegnate per categoria; **video esclusi**.
 - Header sticky con nome + menu; su mobile menu a pannello full-screen.
 
 ## Stile e movimento (file 05)
@@ -112,9 +114,8 @@ Sintesi delle scelte fatte e del perché, in coerenza con i file 03 (landing), 0
 - **Liquid glass** (riferimento Apple): materiale in `styles/glass.css` con tinta bassa + `blur(16px)
   saturate(180%) brightness(1.06)`, **rim 1px** con specifica interna (top chiaro, lati/basso deboli),
   **sheen** diagonale in `mix-blend-mode: screen` e ombra esterna.
-  - Superfici: **header** (barra a tutta larghezza, tinta più densa per leggibilità), **pannello home**,
-    **menu mobile**, **overlay di Play**, **barre del viewer** Creatività; chip/bottoni in vetro leggero
-    (`glass-lite`, blur 8px).
+  - Superfici: **header** (barra a tutta larghezza, tinta più densa per leggibilità), **menu mobile**,
+    **barre del viewer** Creatività; chip/bottoni in vetro leggero (`glass-lite`, blur 8px).
   - **Rifrazione reale** del backdrop solo su header e pannello home, via filtro SVG nascosto
     (`feTurbulence` + `feGaussianBlur` + `feDisplacementMap`) montato dai layout e richiamato dentro
     `@supports (backdrop-filter: url(#lg-refract))` — Chromium; altrove resta il blur.
@@ -124,12 +125,25 @@ Sintesi delle scelte fatte e del perché, in coerenza con i file 03 (landing), 0
     quasi opaca (`--glass-tint-strong`).
   - **Performance**: max ~3 superfici in vetro per viewport, niente vetro sulle card ripetute.
 
-## Play (file 06 + identità Matteo)
+## Revisione recente
 
-- Portato il platformer canvas **Portfolio Rush** del sito attuale: fisica, 10 "idee" da raccogliere,
-  camera, HUD (idee/tempo/livello), schermata iniziale e di completamento.
-- Controlli: tastiera (A/D, frecce, Spazio/W) e **controlli touch** stile Game Boy Advance.
-- Il canvas ha `aria-label` e un testo di stato per screen reader.
+- **Sezione “Play” rimossa** del tutto (voce di menu, stanza, rotta `/play`, gioco `PortfolioRush`,
+  accento e filtro). I capitoli della home ora sono: intro, ADV Portfolio, Creatività, About, Contatti.
+- **“Lavori” rinominato “ADV Portfolio”** (menu, titolo pagina, stanza, metadata). La rotta resta
+  `/lavori` (EN `/en/work`).
+- **Nome reattivo** (intro): componente `ReactiveName` — le lettere vicine al cursore si alzano e
+  scalano; su touch un tap invia un’onda; statico con `prefers-reduced-motion`.
+- **Copertine tipografiche di sezione** (`SectionCover`): titolo grande + indice + descrizione + CTA,
+  che **reagiscono al mouse** (parallasse del titolo, glow dell’accento che segue il cursore). Le card
+  progetto in `/lavori` hanno un tilt/glow reattivo al puntatore.
+- **Sfondi delle sezioni (nessuna immagine ripetuta)**: intro = **nero** (`sfondi/black.webp`);
+  ADV Portfolio = ritratto `sfondi/2.png`; Creatività = ritratto `sfondi/3.png`; About = ritratto
+  `sfondi/1.png`; Contatti = immagine di progetto fuori tema `sfondi/portfolio.webp` (2560×1440),
+  messa per ultima così l’utente la vede alla fine.
+- **Preloader più corto**: progresso ~0.9s, minimo 0.35s, tetto ~1.4s, reveal ~0.5s.
+- **Dati CV di Matteo** inseriti in `src/content/site.json` (profilo, competenze tecniche, soft
+  skills, esperienza, istruzione, location) e mostrati in `/about`; contatto **matteo@tirocchi.com**
+  (cellulare rimosso dal sito).
 
 ## Lingue
 

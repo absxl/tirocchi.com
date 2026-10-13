@@ -28,6 +28,20 @@ function collectSources() {
     else if (item.image) sources.add(item.image);
   }
 
+  // Section backgrounds (sfondi) and generated covers.
+  for (const dir of ["assets/sfondi", "assets/covers"]) {
+    const abs = path.join(PUBLIC, ...dir.split("/"));
+    try {
+      for (const file of readdirSync(abs)) {
+        if (/\.(jpe?g|png|webp)$/i.test(file) && !file.includes(".opt-")) {
+          sources.add(`/${dir}/${file}`);
+        }
+      }
+    } catch {
+      // directory may not exist yet
+    }
+  }
+
   return [...sources].filter((src) => /\.(jpe?g|png|webp)$/i.test(src));
 }
 

@@ -6,9 +6,9 @@ Portfolio statico di Matteo Tirocchi (Next.js 16 + TypeScript, `output: "export"
 con: **home cinematografica** — **preloader** a progresso, **stanze WebGL** pseudo-360 con
 **dissolvenza** randomizzata, **hotspot** e **menu capitoli** (ispirate a The Uncensored Library,
 tecniche reimplementate); pager GSAP un gesto = una pagina; griglia lavori con filtri e vista Lista
-con anteprima al cursore; pagine progetto editoriali; archivio CREATIVITÀ con viewer; il platformer
-"Portfolio Rush" portato dal sito attuale; About/Contatti; **pagine legali** e footer con dati legali
-+ credit. Tipografia **Bricolage Grotesque** (display) + **Space Mono** (testo). 50 pagine statiche.
+con anteprima al cursore; pagine progetto editoriali; archivio CREATIVITÀ con viewer;
+About/Contatti; **pagine legali** e footer con dati legali + credit. Tipografia **Bricolage Grotesque**
+(display) + **Space Mono** (testo). **45 pagine statiche**. La sezione “Play” è stata rimossa.
 Come avviarlo: `npm install` → `npm run dev` (sviluppo) oppure `npm run build` (statico in `out/`).
 
 ## 2. Decisioni di design
@@ -20,7 +20,10 @@ home **scroll-driven** (scena sticky, stanze in crossfade con parallasse vertica
 **stanze WebGL** con shader pseudo-360 e cover mapping, **pannello sezione** a sinistra (titolo,
 descrizione, CTA) e menu capitoli (tecniche riprese da The Uncensored Library e reimplementate);
 header a comparsa graduale; toggle Griglia/Lista con hover-preview; footer con note legali e credit;
-immagini AVIF/WebP via `sharp` + `<SmartImage>`. **Forma e materiali**: linguaggio arrotondato
+immagini AVIF/WebP via `sharp` + `<SmartImage>`. **Revisione recente**: sezione “Play” rimossa e
+“Lavori” rinominato “ADV Portfolio”; nome dell’intro **reattivo** al mouse; **copertine tipografiche**
+di sezione e tilt delle card progetto **reattivi** al puntatore; **intro nera** e una foto diversa per
+ogni sezione (nessuna immagine ripetuta); **preloader più corto**. **Forma e materiali**: linguaggio arrotondato
 (12px, vetro 20px) e fluido (easing morbido) con superfici in **liquid glass** (blur + rim speculare
 + sheen, rifrazione SVG su header/pannello home in Chromium, fallback opachi) — dettagli in
 `docs/decisioni.md`.

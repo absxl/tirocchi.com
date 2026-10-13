@@ -55,7 +55,7 @@ export function Preloader({
     );
     const minTimer = window.setTimeout(() => {
       tasks.min = true;
-    }, 900);
+    }, 350);
 
     const startedAt = performance.now();
     let progress = 0;
@@ -70,7 +70,7 @@ export function Preloader({
       if (reduce) {
         gsap.to(root, {
           autoAlpha: 0,
-          duration: 0.3,
+          duration: 0.2,
           onComplete: () => {
             setHidden(true);
             onDone?.();
@@ -86,18 +86,18 @@ export function Preloader({
         },
       });
       if (metaRef.current) {
-        timeline.to(metaRef.current, { autoAlpha: 0, y: -12, duration: 0.4, ease: EASE.in }, 0);
+        timeline.to(metaRef.current, { autoAlpha: 0, y: -12, duration: 0.25, ease: EASE.in }, 0);
       }
       timeline.to(
         root,
-        { clipPath: "inset(0% 0% 100% 0%)", duration: 1, ease: EASE.custom },
-        0.15
+        { clipPath: "inset(0% 0% 100% 0%)", duration: 0.5, ease: EASE.custom },
+        0.08
       );
     };
 
     const update = () => {
       const elapsed = (performance.now() - startedAt) / 1000;
-      const timeProgress = Math.min(1, elapsed / 1.8);
+      const timeProgress = Math.min(1, elapsed / 0.9);
       const done = (tasks.fonts ? 1 : 0) + (tasks.room ? 1 : 0) + (tasks.min ? 1 : 0);
       const taskProgress = done / 3;
       progress = Math.max(progress, Math.min(timeProgress, taskProgress) * 100);
@@ -109,7 +109,7 @@ export function Preloader({
         barRef.current.style.width = `${progress}%`;
       }
 
-      const ready = timeProgress >= 1 && (taskProgress >= 1 || elapsed > 3);
+      const ready = timeProgress >= 1 && (taskProgress >= 1 || elapsed > 1.4);
       if (ready) {
         finish();
         return;

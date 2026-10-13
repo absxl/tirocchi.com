@@ -1,0 +1,111 @@
+.cover {
+  --from-x: 34px;
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  overflow: hidden;
+  pointer-events: none;
+  animation: coverIn 0.6s var(--ease) both;
+}
+
+.cover[data-side="left"] {
+  --from-x: -34px;
+}
+
+@keyframes coverIn {
+  from {
+    opacity: 0;
+    transform: translateX(var(--from-x));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle 46vw at var(--mx, 50%) var(--my, 50%),
+    color-mix(in srgb, var(--accent) 28%, transparent),
+    transparent 70%
+  );
+  opacity: 0.5;
+  transition: opacity var(--dur) var(--ease);
+}
+
+.inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-xs);
+  padding: clamp(4rem, 12vh, 8rem) clamp(1.4rem, 5vw, 4.5rem) clamp(5.5rem, 15vh, 9rem);
+  max-width: 100%;
+}
+
+.cover[data-side="right"] .inner {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.index {
+  color: var(--accent);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.4rem, 10.5vw, 8.5rem);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  transform: translate3d(var(--tx, 0), var(--ty, 0), 0) skewX(var(--sk, 0deg));
+  transition: transform 0.25s var(--ease);
+  will-change: transform;
+}
+
+.desc {
+  max-width: 44ch;
+  color: var(--fg-dim);
+}
+
+.cta {
+  pointer-events: auto;
+  margin-top: var(--space-s);
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-pill);
+  color: var(--fg);
+  transition: background var(--dur) var(--ease), color var(--dur) var(--ease),
+    border-color var(--dur) var(--ease);
+}
+
+.cover[data-side="right"] .cta {
+  align-self: flex-end;
+}
+
+.cta:hover,
+.cta:focus-visible {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cover {
+    animation: none;
+  }
+
+  .title {
+    transition: none;
+    transform: none;
+  }
+}

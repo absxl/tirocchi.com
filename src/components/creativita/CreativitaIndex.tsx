@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { categoryHref, getDictionary } from "@/lib/i18n";
-import type { ArchiveCategory, ArchiveItem, Locale } from "@/lib/types";
+import type { Locale } from "@/lib/types";
+import type { GalleryCategory, GalleryItem } from "@/lib/gallery";
 import { SmartImage } from "@/components/SmartImage";
 import { CoverReel } from "./CoverReel";
 import { PageTransition } from "@/components/motion/PageTransition";
@@ -13,8 +14,8 @@ export function CreativitaIndex({
   reel,
 }: {
   lang: Locale;
-  categories: ArchiveCategory[];
-  reel: ArchiveItem[];
+  categories: GalleryCategory[];
+  reel: GalleryItem[];
 }) {
   const dict = getDictionary(lang);
 
@@ -54,8 +55,8 @@ export function CreativitaIndex({
         <section className={styles.reelSection} aria-label={dict.progetto.gallery}>
           <span className="eyebrow">{dict.progetto.gallery}</span>
           <CoverReel
-            items={reel.map((item) => ({ title: item.title, image: item.thumb ?? item.image ?? "" }))}
-            hint={dict.landing.hintPointer}
+            items={reel.map((item) => ({ title: item.title, image: item.image }))}
+            hint={dict.creativita.reelHint}
           />
         </section>
       )}

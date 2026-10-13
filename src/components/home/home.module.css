@@ -249,6 +249,20 @@
   flex-wrap: wrap;
 }
 
+/* Social — bottom left */
+.social {
+  position: absolute;
+  left: var(--pad);
+  bottom: var(--space-l);
+  z-index: 4;
+}
+
+@media (max-width: 900px) {
+  .social {
+    bottom: calc(var(--space-l) + 2.4rem);
+  }
+}
+
 .hint {
   font-family: var(--font-mono);
   font-size: var(--step--1);

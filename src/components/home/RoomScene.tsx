@@ -1,7 +1,6 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import Link from "next/link";
 import { gsap } from "@/lib/gsap";
 import { EASE } from "@/lib/eases";
 import { prefersReducedMotion } from "@/lib/motion";
@@ -9,6 +8,8 @@ import { largeVariant } from "@/lib/image-variants";
 import { getContext, createProgram, createQuad, createTexture, type GL } from "@/lib/webgl";
 import type { Room } from "@/lib/rooms";
 import { SocialIcons } from "@/components/SocialIcons";
+import { ReactiveName } from "./ReactiveName";
+import { SectionCover } from "./SectionCover";
 import { VERTEX_SHADER, FRAGMENT_SHADER } from "./roomShader";
 import styles from "./home.module.css";
 
@@ -60,6 +61,7 @@ export function RoomScene({
   prevLabel,
   nextLabel,
   chaptersLabel,
+  exploreLabel,
 }: {
   rooms: Room[];
   social: { label: string; url: string }[];
@@ -67,13 +69,13 @@ export function RoomScene({
   prevLabel: string;
   nextLabel: string;
   chaptersLabel: string;
+  exploreLabel: string;
 }) {
   const [index, setIndex] = useState(0);
   const [webgl, setWebgl] = useState(false);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const wrapRef = useRef<HTMLDivElement>(null);
-  const panelRef = useRef<HTMLDivElement>(null);
   const sceneRef = useRef<Scene | null>(null);
   const indexRef = useRef(0);
   const programmaticRef = useRef(false);
@@ -160,6 +162,14 @@ export function RoomScene({
     sceneRef.current = scene;
     setWebgl(true);
 
+    const reduceMotion = prefersReducedMotion();
+    const pointer = { x: 0, y: 0 };
+    const onPointerMove = (event: PointerEvent) => {
+      pointer.x = event.clientX / window.innerWidth - 0.5;
+      pointer.y = event.clientY / window.innerHeight - 0.5;
+    };
+    window.addEventListener("pointermove", onPointerMove, { passive: true });
+
     const maxTexture = window.innerWidth < 800 ? 960 : 1600;
 
     const resize = () => {
@@ -232,10 +242,11 @@ export function RoomScene({
       scene.b = upper;
       scene.t = smoothstep(0.35, 0.65, fraction);
 
-      // Vertical parallax, damped for a smooth glide.
-      const targetPanY = (progress - 0.5) * 0.5;
+      // Parallax: vertical glide from scroll, plus a subtle mouse follow.
+      const targetPanY = (progress - 0.5) * 0.5 + (reduceMotion ? 0 : pointer.y * 0.14);
       scene.pan.y += (targetPanY - scene.pan.y) * 0.08;
-      scene.pan.x += (0 - scene.pan.x) * 0.1;
+      const targetPanX = reduceMotion ? 0 : pointer.x * 0.18;
+      scene.pan.x += (targetPanX - scene.pan.x) * 0.1;
 
       const active = Math.round(floatIndex);
       if (!programmaticRef.current && active !== indexRef.current) {
@@ -280,6 +291,7 @@ export function RoomScene({
       stopLoop();
       observer.disconnect();
       window.removeEventListener("resize", resize);
+      window.removeEventListener("pointermove", onPointerMove);
       document.removeEventListener("visibilitychange", onVisibility);
       gsap.killTweensOf(window);
       if (sceneRef.current === scene) sceneRef.current = null;
@@ -301,17 +313,6 @@ export function RoomScene({
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [index, goTo]);
-
-  useEffect(() => {
-    const element = panelRef.current;
-    if (!element || prefersReducedMotion()) return;
-    const fromX = panelSide === "right" ? 34 : -34;
-    gsap.fromTo(
-      element,
-      { opacity: 0, x: fromX },
-      { opacity: 1, x: 0, duration: 0.6, ease: EASE.out, overwrite: true }
-    );
-  }, [index, panelSide]);
 
   // The active section drives the whole site palette.
   useEffect(() => {
@@ -345,32 +346,28 @@ export function RoomScene({
 
         {room.id === "intro" ? (
           <div className={styles.intro}>
-            <span className={styles.name}>{room.label}</span>
+            <ReactiveName text={room.label} className={styles.name} />
             <span className={styles.role}>{room.desc}</span>
           </div>
         ) : (
-          <div ref={panelRef} className={styles.panel} data-side={panelSide}>
-            <span className={`mono ${styles.panelNo}`}>
-              {String(index).padStart(2, "0")}
-            </span>
-            <h2 className={styles.panelTitle}>{room.label}</h2>
-            <p className={styles.panelDesc}>{room.desc}</p>
-            <Link
-              href={room.href}
-              className={styles.panelCta}
-              data-cursor
-              data-cursor-label={room.label}
-              transitionTypes={["nav-forward"]}
-            >
-              {room.label}
-            </Link>
-          </div>
+          <SectionCover
+            key={room.id}
+            index={index}
+            label={room.label}
+            desc={room.desc}
+            href={room.href}
+            side={panelSide}
+            ctaLabel={exploreLabel}
+          />
         )}
 
         <div className={styles.top}>
           <div className={styles.topLeft}>
             <span className={styles.hint}>{hint}</span>
           </div>
+        </div>
+
+        <div className={styles.social}>
           <SocialIcons items={social} />
         </div>
 

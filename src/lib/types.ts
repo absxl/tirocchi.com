@@ -51,9 +51,13 @@ export interface SiteInfo {
   tagline: string;
   location: string;
   email: string;
+  phone?: string;
   bio: string;
   social: SocialLinks;
   skills: string[];
+  softSkills: string[];
+  experience: { period: string; role: string; detail: string }[];
+  education: { year: string; title: string; institution: string }[];
   awards: { year: string; title: string; detail: string; url?: string }[];
   legal: {
     vat: string;

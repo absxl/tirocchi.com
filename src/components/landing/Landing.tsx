@@ -9,39 +9,15 @@ import { Preloader } from "@/components/home/Preloader";
 import { RoomScene } from "@/components/home/RoomScene";
 import styles from "./Landing.module.css";
 
-export interface LandingProject {
-  slug: string;
-  no: string;
-  client: string;
-  title: string;
-  year: string;
-  category: string;
-  cover: string;
-  coverAlt: string;
-}
-
-export interface LandingCategory {
-  slug: string;
-  title: string;
-  count: number;
-  cover: string;
-  description: string;
-}
-
 interface LandingProps {
   lang: Locale;
-  projects: LandingProject[];
-  categories: LandingCategory[];
   social: { label: string; url: string }[];
 }
 
-export function Landing({ lang, projects, categories, social }: LandingProps) {
+export function Landing({ lang, social }: LandingProps) {
   const dict = getDictionary(lang);
 
-  const rooms = useMemo(
-    () => buildRooms({ lang, projects, categories, dict }),
-    [lang, projects, categories, dict]
-  );
+  const rooms = useMemo(() => buildRooms({ lang, dict }), [lang, dict]);
 
   return (
     <PageTransition>
@@ -54,6 +30,7 @@ export function Landing({ lang, projects, categories, social }: LandingProps) {
           prevLabel={dict.progetto.previous}
           nextLabel={dict.progetto.next}
           chaptersLabel={dict.landing.chapters}
+          exploreLabel={dict.landing.explore}
         />
       </div>
     </PageTransition>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { CreativitaIndex } from "@/components/creativita/CreativitaIndex";
-import { getArchiveItems, getPersonal } from "@/lib/content";
+import { getGallery } from "@/lib/gallery";
 import { getDictionary, routes } from "@/lib/i18n";
 import { pageAlternates } from "@/lib/site-url";
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  const { categories } = getPersonal();
-  const reel = getArchiveItems("cover-art");
+  const { categories, items } = getGallery();
+  const reel = items.filter((item) => item.category === "cover-art");
   return <CreativitaIndex lang="en" categories={categories} reel={reel} />;
 }

@@ -13,7 +13,6 @@ export const routes = {
     home: "/",
     lavori: "/lavori",
     creativita: "/creativita",
-    play: "/play",
     about: "/about",
     contatti: "/contatti",
     privacy: "/privacy",
@@ -24,7 +23,6 @@ export const routes = {
     home: "/en",
     lavori: "/en/work",
     creativita: "/en/creativity",
-    play: "/en/play",
     about: "/en/about",
     contatti: "/en/contact",
     privacy: "/en/privacy",
@@ -34,7 +32,7 @@ export const routes = {
 } as const;
 
 export type RouteKey = keyof (typeof routes)["it"];
-export type NavKey = "lavori" | "creativita" | "play" | "about" | "contatti";
+export type NavKey = "lavori" | "creativita" | "about" | "contatti";
 
 export function href(lang: Locale, key: RouteKey): string {
   return routes[lang][key];
@@ -52,9 +50,8 @@ const it = {
   code: "it",
   htmlLang: "it",
   nav: {
-    lavori: "Lavori",
+    lavori: "ADV Portfolio",
     creativita: "Creatività",
-    play: "Play",
     about: "About",
     contatti: "Contatti",
   },
@@ -65,49 +62,31 @@ const it = {
     closeMenu: "Chiudi il menu",
     back: "Indietro",
     backToTop: "Torna su",
-    scrivimi: "Scrivimi",
     language: "Lingua",
     draft: "[DA REVISIONARE]",
   },
   landing: {
-    sectionsLabel: "Sezioni",
     name: "MATTEO TIROCCHI",
     roleLine: "Art Director — ADV Portfolio",
-    hintPointer: "Passa sul nome",
-    hintTouch: "Tocca il nome",
     scrollHint: "Scorri",
+    hintPointer: "Passa sul nome",
     loading: "Caricamento",
     chapters: "Capitoli",
+    explore: "Esplora",
     sectionDesc: {
       lavori: "Campagne e progetti di art direction per brand e agenzie.",
-      play: "Un piccolo videogioco: il processo creativo reso giocabile.",
       creativita: "Archivio personale tra AI art, cover, fotografia e video.",
       about: "Chi sono, cosa faccio e con chi ho lavorato.",
       contatti: "Email e social per progetti e collaborazioni.",
     },
-    areas: {
-      lavori: { no: "01", title: "Lavori", label: "Lavoro professionale" },
-      play: { no: "02", title: "Play", label: "Un processo creativo" },
-      creativita: { no: "03", title: "Creatività", label: "Archivio" },
-    },
-    panels: {
-      lavori: "Lavori selezionati",
-      play: "Play",
-      creativita: "Creatività",
-      about: "About",
-      contatti: "Contatti",
-    },
   },
   lavori: {
-    eyebrow: "Selezione",
-    title: "Lavori",
-    intro: "Campagne e progetti di art direction. Filtra per categoria o cambia vista.",
-    filters: { all: "Tutti", adv: "ADV", personal: "Personal", play: "Play" },
-    viewGrid: "Griglia",
+    title: "ADV Portfolio",
+    intro: "Campagne e progetti di art direction.",
+    filters: { all: "Tutti", adv: "ADV", personal: "Personal" },
+    viewGrid: "Slideshow",
     viewList: "Lista",
     empty: "Nessun progetto in questa categoria.",
-    openProject: "Vedi progetto",
-    resultCount: (n: number) => `${n} ${n === 1 ? "progetto" : "progetti"}`,
   },
   progetto: {
     role: "Il mio ruolo",
@@ -122,15 +101,16 @@ const it = {
     type: "Tipo",
     previous: "Precedente",
     next: "Successivo",
-    allProjects: "Tutti i lavori",
+    allProjects: "Tutti i progetti",
     gallery: "Galleria",
   },
   creativita: {
     eyebrow: "Archivio visivo",
     title: "Creatività",
-    intro: "Ricerca personale tra AI, cover, fotografia, video ed esperimenti.",
+    intro: "Ricerca personale tra AI, cover, fotografia e video.",
     categoriesLabel: "Categorie",
     collection: "Collezione",
+    reelHint: "Muovi il cursore per esplorare",
     works: "opere",
     openWork: "Apri",
     previous: "Precedente",
@@ -140,34 +120,20 @@ const it = {
     video: "Video",
     empty: "Categoria in arrivo.",
   },
-  play: {
-    eyebrow: "Play",
-    title: "Portfolio Rush",
-    intro:
-      "Un piccolo platformer: raccogli le idee e attraversa il livello. Un modo giocoso di entrare nel portfolio.",
-    start: "Inizia",
-    skip: "Vai ai lavori",
-    exit: "Esci",
-    restart: "Riprova",
-    move: "A e D per muovere",
-    jump: "Spazio Salta",
-    ideas: "Idee",
-    time: "Tempo",
-    level: "Livello 01 — Brief",
-    complete: "Obiettivo completato",
-    completeBody: "Hai raccolto le idee del brief. Il prossimo progetto potremmo farlo insieme.",
-    discover: "Scopri i lavori",
-    statusReady:
-      "Livello pronto. Muoviti con sinistra e destra; premi A o spazio per saltare.",
-    touchHint: "Su touch usa i controlli in basso.",
-  },
   about: {
     eyebrow: "Chi sono",
     title: "About",
+    profile: "Profilo",
     bio: "Bio",
-    skills: "Competenze",
+    experience: "Esperienza professionale",
+    education: "Istruzione e formazione",
+    skills: "Competenze tecniche",
+    softSkills: "Soft skills",
     awards: "Riconoscimenti",
+    personalData: "Dati personali",
     contact: "Contatti",
+    phone: "Cellulare",
+    portfolio: "Behance / Portfolio",
     draftNote: "Questa sezione è in attesa dei contenuti definitivi.",
   },
   contatti: {
@@ -175,6 +141,7 @@ const it = {
     title: "Contatti",
     intro: "Scrivimi per progetti, collaborazioni e art direction.",
     email: "Email",
+    phone: "Cellulare",
     social: "Social",
   },
   footer: {
@@ -216,9 +183,8 @@ const en: typeof it = {
   code: "en",
   htmlLang: "en",
   nav: {
-    lavori: "Work",
+    lavori: "ADV Portfolio",
     creativita: "Creativity",
-    play: "Play",
     about: "About",
     contatti: "Contact",
   },
@@ -229,49 +195,31 @@ const en: typeof it = {
     closeMenu: "Close menu",
     back: "Back",
     backToTop: "Back to top",
-    scrivimi: "Get in touch",
     language: "Language",
     draft: "[TO REVIEW]",
   },
   landing: {
-    sectionsLabel: "Sections",
     name: "MATTEO TIROCCHI",
     roleLine: "Art Director — ADV Portfolio",
-    hintPointer: "Hover the name",
-    hintTouch: "Tap the name",
     scrollHint: "Scroll",
+    hintPointer: "Hover the name",
     loading: "Loading",
     chapters: "Chapters",
+    explore: "Explore",
     sectionDesc: {
       lavori: "Advertising campaigns and art direction projects for brands and agencies.",
-      play: "A small game: the creative process made playable.",
       creativita: "Personal archive across AI art, covers, photography and video.",
       about: "Who I am, what I do and who I worked with.",
       contatti: "Email and socials for projects and collaborations.",
     },
-    areas: {
-      lavori: { no: "01", title: "Work", label: "Professional work" },
-      play: { no: "02", title: "Play", label: "A creative process" },
-      creativita: { no: "03", title: "Creativity", label: "Archive" },
-    },
-    panels: {
-      lavori: "Selected work",
-      play: "Play",
-      creativita: "Creativity",
-      about: "About",
-      contatti: "Contact",
-    },
   },
   lavori: {
-    eyebrow: "Selection",
-    title: "Work",
-    intro: "Advertising campaigns and art direction projects. Filter by category or switch view.",
-    filters: { all: "All", adv: "ADV", personal: "Personal", play: "Play" },
-    viewGrid: "Grid",
+    title: "ADV Portfolio",
+    intro: "Advertising campaigns and art direction projects.",
+    filters: { all: "All", adv: "ADV", personal: "Personal" },
+    viewGrid: "Slideshow",
     viewList: "List",
     empty: "No projects in this category.",
-    openProject: "View project",
-    resultCount: (n: number) => `${n} ${n === 1 ? "project" : "projects"}`,
   },
   progetto: {
     role: "My role",
@@ -286,15 +234,16 @@ const en: typeof it = {
     type: "Type",
     previous: "Previous",
     next: "Next",
-    allProjects: "All work",
+    allProjects: "All projects",
     gallery: "Gallery",
   },
   creativita: {
     eyebrow: "Visual archive",
     title: "Creativity",
-    intro: "Personal research across AI, covers, photography, video and experiments.",
+    intro: "Personal research across AI, covers, photography and video.",
     categoriesLabel: "Categories",
     collection: "Collection",
+    reelHint: "Move the cursor to explore",
     works: "works",
     openWork: "Open",
     previous: "Previous",
@@ -304,33 +253,20 @@ const en: typeof it = {
     video: "Video",
     empty: "Category coming soon.",
   },
-  play: {
-    eyebrow: "Play",
-    title: "Portfolio Rush",
-    intro:
-      "A small platformer: collect the ideas and cross the level. A playful way into the portfolio.",
-    start: "Start",
-    skip: "Go to work",
-    exit: "Exit",
-    restart: "Retry",
-    move: "A and D to move",
-    jump: "Space Jump",
-    ideas: "Ideas",
-    time: "Time",
-    level: "Level 01 — Brief",
-    complete: "Objective complete",
-    completeBody: "You collected the brief’s ideas. The next project we could make together.",
-    discover: "Discover the work",
-    statusReady: "Level ready. Move with left and right; press A or space to jump.",
-    touchHint: "On touch use the controls below.",
-  },
   about: {
     eyebrow: "Who I am",
     title: "About",
+    profile: "Profile",
     bio: "Bio",
-    skills: "Skills",
+    experience: "Professional experience",
+    education: "Education and training",
+    skills: "Technical skills",
+    softSkills: "Soft skills",
     awards: "Awards",
+    personalData: "Personal data",
     contact: "Contact",
+    phone: "Phone",
+    portfolio: "Behance / Portfolio",
     draftNote: "This section is waiting for final content.",
   },
   contatti: {
@@ -338,6 +274,7 @@ const en: typeof it = {
     title: "Contact",
     intro: "Get in touch for projects, collaborations and art direction.",
     email: "Email",
+    phone: "Phone",
     social: "Social",
   },
   footer: {
@@ -390,7 +327,6 @@ export function isLocale(value: string): value is Locale {
 const itSegmentToKey: Record<string, RouteKey> = {
   lavori: "lavori",
   creativita: "creativita",
-  play: "play",
   about: "about",
   contatti: "contatti",
   privacy: "privacy",
@@ -401,7 +337,6 @@ const itSegmentToKey: Record<string, RouteKey> = {
 const enSegmentToKey: Record<string, RouteKey> = {
   work: "lavori",
   creativity: "creativita",
-  play: "play",
   about: "about",
   contact: "contatti",
   privacy: "privacy",
@@ -413,7 +348,7 @@ export function switchLocaleHref(pathname: string, from: Locale, to: Locale): st
   const clean = pathname.replace(/\/+$/, "") || "/";
   if (from === "it") {
     const match = clean.match(
-      /^\/(lavori|creativita|play|about|contatti|privacy|cookie-policy|note-legali)(?:\/(.+))?$/
+      /^\/(lavori|creativita|about|contatti|privacy|cookie-policy|note-legali)(?:\/(.+))?$/
     );
     if (!match) return routes[to].home;
     const key = itSegmentToKey[match[1]];
@@ -421,7 +356,7 @@ export function switchLocaleHref(pathname: string, from: Locale, to: Locale): st
     return rest ? `${routes[to][key]}/${rest}` : routes[to][key];
   }
   const match = clean.match(
-    /^\/en(?:\/(work|creativity|play|about|contact|privacy|cookie-policy|legal-notes)(?:\/(.+))?)?$/
+    /^\/en(?:\/(work|creativity|about|contact|privacy|cookie-policy|legal-notes)(?:\/(.+))?)?$/
   );
   if (!match) return routes[to].home;
   const key = match[1] ? enSegmentToKey[match[1]] : "home";

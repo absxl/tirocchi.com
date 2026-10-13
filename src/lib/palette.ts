@@ -1,7 +1,6 @@
 export const ACCENT = {
   default: "#3b82f6",
   lavori: "#ff6a3d",
-  play: "#ffd166",
   creativita: "#a78bfa",
   about: "#22d3ee",
   contatti: "#ff5c8a",
@@ -17,7 +16,6 @@ export interface InnerAccent {
 /** Accents for inner pages, taken from Matteo's old site palette. */
 export const INNER_ACCENT = {
   lavori: { accent: "#abc8ee", ink: "#0a1017" },
-  play: { accent: "#f2d7a2", ink: "#0a1017" },
   creativita: { accent: "#9b8cd6", ink: "#0a1017" },
   about: { accent: "#6b8fbf", ink: "#0a1017" },
   contatti: { accent: "#d4695e", ink: "#0a1017" },
@@ -29,7 +27,6 @@ export function innerAccentForPath(pathname: string): InnerAccent | null {
   const clean = pathname.replace(/\/+$/, "") || "/";
   if (clean === "/" || clean === "/en") return null;
   if (clean.startsWith("/lavori") || clean.startsWith("/en/work")) return INNER_ACCENT.lavori;
-  if (clean.startsWith("/play") || clean.startsWith("/en/play")) return INNER_ACCENT.play;
   if (clean.startsWith("/creativita") || clean.startsWith("/en/creativity")) {
     return INNER_ACCENT.creativita;
   }

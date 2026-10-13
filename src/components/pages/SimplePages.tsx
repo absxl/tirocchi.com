@@ -48,7 +48,6 @@ function EmailBlock({ lang, site }: { lang: Locale; site: SiteInfo }) {
 
 export function AboutView({ lang, site }: { lang: Locale; site: SiteInfo }) {
   const dict = getDictionary(lang);
-  const bioPlaceholder = isPlaceholder(site.bio);
 
   return (
     <PageTransition>
@@ -56,52 +55,92 @@ export function AboutView({ lang, site }: { lang: Locale; site: SiteInfo }) {
         <header className={styles.head}>
           <span className="eyebrow">{dict.about.eyebrow}</span>
           <h1 className={styles.title}>{dict.about.title}</h1>
+          <p className={styles.role}>
+            {site.role} — {site.location}
+          </p>
         </header>
 
-      <section className={styles.section}>
-        <h2 className={styles.sectionTitle}>{dict.about.bio}</h2>
-        {bioPlaceholder ? (
-          <p className={styles.placeholder}>
-            {site.bio} — {dict.about.draftNote}
-          </p>
-        ) : (
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>{dict.about.profile}</h2>
           <p className={styles.lead}>{site.bio}</p>
+        </section>
+
+        {site.experience.length > 0 && (
+          <section className={styles.section}>
+            <h2 className={styles.sectionTitle}>{dict.about.experience}</h2>
+            <ul className={styles.entries}>
+              {site.experience.map((entry) => (
+                <li key={`${entry.period}-${entry.role}`} className={styles.entry}>
+                  <div className={styles.entryHead}>
+                    <span className="mono">{entry.period}</span>
+                    <strong>{entry.role}</strong>
+                  </div>
+                  {entry.detail && <p className={styles.entryDetail}>{entry.detail}</p>}
+                </li>
+              ))}
+            </ul>
+          </section>
         )}
-      </section>
 
-      <section className={styles.section}>
-        <h2 className={styles.sectionTitle}>{dict.about.skills}</h2>
-        <ul className={styles.tags}>
-          {site.skills.map((skill) => (
-            <li key={skill} className={isPlaceholder(skill) ? styles.placeholder : undefined}>
-              {skill}
-            </li>
-          ))}
-        </ul>
-      </section>
+        {site.education.length > 0 && (
+          <section className={styles.section}>
+            <h2 className={styles.sectionTitle}>{dict.about.education}</h2>
+            <ul className={styles.entries}>
+              {site.education.map((entry) => (
+                <li key={`${entry.year}-${entry.title}`} className={styles.entry}>
+                  <div className={styles.entryHead}>
+                    <span className="mono">{entry.year}</span>
+                    <strong>{entry.title}</strong>
+                  </div>
+                  {entry.institution && <p className={styles.entryDetail}>{entry.institution}</p>}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
-      <section className={styles.section}>
-        <h2 className={styles.sectionTitle}>{dict.about.awards}</h2>
-        {site.awards.length === 0 ? (
-          <p className={styles.placeholder}>{dict.about.draftNote}</p>
-        ) : (
-          <ul className={styles.awards}>
-            {site.awards.map((award) => (
-              <li key={`${award.year}-${award.title}`}>
-                <span className="mono">{award.year}</span>
-                <strong>{award.title}</strong>
-                <span>{award.detail}</span>
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>{dict.about.skills}</h2>
+          <ul className={styles.tags}>
+            {site.skills.map((skill) => (
+              <li key={skill} className={isPlaceholder(skill) ? styles.placeholder : undefined}>
+                {skill}
               </li>
             ))}
           </ul>
-        )}
-      </section>
+        </section>
 
-      <section className={styles.section}>
-        <h2 className={styles.sectionTitle}>{dict.about.contact}</h2>
-        <EmailBlock lang={lang} site={site} />
-        <SocialList lang={lang} site={site} />
-      </section>
+        {site.softSkills.length > 0 && (
+          <section className={styles.section}>
+            <h2 className={styles.sectionTitle}>{dict.about.softSkills}</h2>
+            <ul className={styles.tags}>
+              {site.softSkills.map((skill) => (
+                <li key={skill}>{skill}</li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {site.awards.length > 0 && (
+          <section className={styles.section}>
+            <h2 className={styles.sectionTitle}>{dict.about.awards}</h2>
+            <ul className={styles.awards}>
+              {site.awards.map((award) => (
+                <li key={`${award.year}-${award.title}`}>
+                  <span className="mono">{award.year}</span>
+                  <strong>{award.title}</strong>
+                  <span>{award.detail}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>{dict.about.contact}</h2>
+          <EmailBlock lang={lang} site={site} />
+          <SocialList lang={lang} site={site} />
+        </section>
       </div>
     </PageTransition>
   );

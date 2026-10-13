@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getDictionary, href } from "@/lib/i18n";
-import type { ArchiveCategory, ArchiveItem, Locale } from "@/lib/types";
+import type { Locale } from "@/lib/types";
+import type { GalleryCategory, GalleryItem } from "@/lib/gallery";
 import { ArchiveGallery } from "./ArchiveGallery";
 import { PageTransition } from "@/components/motion/PageTransition";
 import styles from "./Creativita.module.css";
@@ -11,8 +12,8 @@ export function CategoryView({
   items,
 }: {
   lang: Locale;
-  category: ArchiveCategory;
-  items: ArchiveItem[];
+  category: GalleryCategory;
+  items: GalleryItem[];
 }) {
   const dict = getDictionary(lang);
 

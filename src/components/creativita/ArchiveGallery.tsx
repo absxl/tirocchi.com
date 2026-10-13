@@ -2,18 +2,13 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { getDictionary } from "@/lib/i18n";
-import type { ArchiveItem, Locale } from "@/lib/types";
+import type { Locale } from "@/lib/types";
+import type { GalleryItem } from "@/lib/gallery";
 import { useDialog } from "@/lib/useDialog";
-import { SmartImage } from "@/components/SmartImage";
+import { Slideshow } from "@/components/gallery/Slideshow";
 import styles from "./Creativita.module.css";
 
-export function ArchiveGallery({
-  lang,
-  items,
-}: {
-  lang: Locale;
-  items: ArchiveItem[];
-}) {
+export function ArchiveGallery({ lang, items }: { lang: Locale; items: GalleryItem[] }) {
   const dict = getDictionary(lang);
   const [index, setIndex] = useState<number | null>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
@@ -45,30 +40,19 @@ export function ArchiveGallery({
 
   return (
     <>
-      <ul className={styles.gallery}>
-        {items.map((item, i) => (
-          <li key={item.id}>
-            <button
-              type="button"
-              className={styles.galleryItem}
-              onClick={() => setIndex(i)}
-              aria-label={`${dict.creativita.openWork}: ${item.title}`}
-            >
-              <SmartImage
-                src={item.thumb ?? item.image ?? ""}
-                alt={item.title}
-                sizes="(min-width: 1200px) 13rem, 45vw"
-              />
-              {item.type === "video" && (
-                <span className={styles.playMark} aria-hidden="true">
-                  ▶
-                </span>
-              )}
-              <span className={styles.galleryTitle}>{item.title}</span>
-            </button>
-          </li>
-        ))}
-      </ul>
+      <Slideshow
+        label={dict.progetto.gallery}
+        prevLabel={dict.creativita.previous}
+        nextLabel={dict.creativita.next}
+        items={items.map((item, i) => ({
+          id: item.id,
+          image: item.image,
+          alt: item.title,
+          title: item.title,
+          meta: item.meta,
+          onOpen: () => setIndex(i),
+        }))}
+      />
 
       {current && index !== null && (
         <div
@@ -80,9 +64,7 @@ export function ArchiveGallery({
           tabIndex={-1}
         >
           <div className={styles.viewerHead}>
-            <span className="mono">
-              {current.type === "video" ? dict.creativita.video : dict.creativita.image}
-            </span>
+            <span className="mono">{dict.creativita.image}</span>
             <span className="mono">
               {String(index + 1).padStart(2, "0")} {String(items.length).padStart(2, "0")}
             </span>
@@ -92,19 +74,8 @@ export function ArchiveGallery({
           </div>
 
           <div className={styles.viewerMedia}>
-            {current.type === "video" && current.video ? (
-              <video
-                src={current.video}
-                poster={current.thumb ?? current.image}
-                controls
-                playsInline
-                preload="metadata"
-                aria-label={current.title}
-              />
-            ) : (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img src={current.image} alt={current.title} />
-            )}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={current.image} alt={current.title} />
           </div>
 
           <div className={styles.viewerBar}>
@@ -113,9 +84,7 @@ export function ArchiveGallery({
             </button>
             <div className={styles.viewerMeta}>
               <strong>{current.title}</strong>
-              <span className="mono">
-                {current.year} · {current.role}
-              </span>
+              {current.meta && <span className="mono">{current.meta}</span>}
             </div>
             <button type="button" className={styles.viewerNav} onClick={() => go(1)}>
               {dict.creativita.next}

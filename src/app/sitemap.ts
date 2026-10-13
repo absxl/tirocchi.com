@@ -33,7 +33,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   push(routes.it.home, routes.en.home);
   push(routes.it.lavori, routes.en.lavori);
   push(routes.it.creativita, routes.en.creativita);
-  push(routes.it.play, routes.en.play);
   push(routes.it.about, routes.en.about);
   push(routes.it.contatti, routes.en.contatti);
   push(routes.it.privacy, routes.en.privacy);
