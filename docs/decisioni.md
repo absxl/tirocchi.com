@@ -140,7 +140,11 @@ Sintesi delle scelte fatte e del perché, in coerenza con i file 03 (landing), 0
   ADV Portfolio = ritratto `sfondi/2.png`; Creatività = ritratto `sfondi/3.png`; About = ritratto
   `sfondi/1.png`; Contatti = immagine di progetto fuori tema `sfondi/portfolio.webp` (2560×1440),
   messa per ultima così l’utente la vede alla fine.
-- **Preloader più corto**: progresso ~0.9s, minimo 0.35s, tetto ~1.4s, reveal ~0.5s.
+- **Preloader rimosso**: nessuna schermata di caricamento; l'ingresso in home è un **zoom fluido
+  tipo Netflix** (scala 1.3 → 1, opacity, ~1s, `cubic-bezier(.22,1,.36,1)`), disattivato con
+  `prefers-reduced-motion`.
+- **Nav a destra** con la voce **"Contact Me"** evidenziata da un **box** (pill con bordo accento),
+  sia IT sia EN, in header e come etichetta della sezione in home.
 - **Dati CV di Matteo** inseriti in `src/content/site.json` (profilo, competenze tecniche, soft
   skills, esperienza, istruzione, location) e mostrati in `/about`; contatto **matteo@tirocchi.com**
   (cellulare rimosso dal sito).
@@ -161,8 +165,9 @@ Sintesi delle scelte fatte e del perché, in coerenza con i file 03 (landing), 0
 
 ## Footer e note legali
 
-- Il footer include **informazioni legali** (P. IVA, C.F., sede legale, PEC — `[DA COMPILARE]`) e i
-  link a **Privacy Policy**, **Cookie Policy**, **Note legali**.
+- Il footer **non** mostra più il blocco "Informazioni legali" (P. IVA, C.F., sede legale, PEC),
+  rimosso perché sito personale; restano i link a **Privacy Policy**, **Cookie Policy**, **Note legali**.
+  Anche l'email è stata tolta dal footer (compariva due volte in Contatti).
 - Pagine legali create: `/privacy`, `/cookie-policy`, `/note-legali` (EN: `/en/privacy`,
   `/en/cookie-policy`, `/en/legal-notes`) con contenuti **segnaposto** da far validare a un
   professionista.

@@ -53,7 +53,7 @@ const it = {
     lavori: "ADV Portfolio",
     creativita: "Creatività",
     about: "About",
-    contatti: "Contatti",
+    contatti: "Contact Me",
   },
   common: {
     menu: "Menu",
@@ -186,7 +186,7 @@ const en: typeof it = {
     lavori: "ADV Portfolio",
     creativita: "Creativity",
     about: "About",
-    contatti: "Contact",
+    contatti: "Contact Me",
   },
   common: {
     menu: "Menu",

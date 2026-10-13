@@ -5,7 +5,6 @@ import { getDictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/types";
 import { buildRooms } from "@/lib/rooms";
 import { PageTransition } from "@/components/motion/PageTransition";
-import { Preloader } from "@/components/home/Preloader";
 import { RoomScene } from "@/components/home/RoomScene";
 import styles from "./Landing.module.css";
 
@@ -21,7 +20,6 @@ export function Landing({ lang, social }: LandingProps) {
 
   return (
     <PageTransition>
-      <Preloader name={dict.landing.name} loadingLabel={dict.landing.loading} />
       <div className={styles.landing}>
         <RoomScene
           rooms={rooms}

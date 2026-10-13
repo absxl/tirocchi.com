@@ -12,7 +12,6 @@ export function Footer({ lang, site }: { lang: Locale; site: SiteInfo }) {
   const dict = getDictionary(lang);
   const pathname = usePathname();
   const year = new Date().getFullYear();
-  const emailValid = !isPlaceholder(site.email);
   const isHome = pathname === href(lang, "home");
 
   const socials = [
@@ -21,27 +20,9 @@ export function Footer({ lang, site }: { lang: Locale; site: SiteInfo }) {
     { label: "LinkedIn", url: site.social.linkedin },
   ].filter((item) => item.url && !isPlaceholder(item.url));
 
-  const legalRows = [
-    { label: dict.footer.vat, value: site.legal.vat },
-    { label: dict.footer.taxCode, value: site.legal.taxCode },
-    { label: dict.footer.address, value: site.legal.address },
-    { label: dict.footer.pec, value: site.legal.pec },
-  ];
-
   return (
     <footer className={styles.footer}>
       <div className={styles.inner}>
-        <div className={styles.block}>
-          <span className="eyebrow">{dict.contatti.email}</span>
-          {emailValid ? (
-            <a className={styles.email} href={`mailto:${site.email}`}>
-              {site.email}
-            </a>
-          ) : (
-            <span className={styles.placeholder}>{site.email}</span>
-          )}
-        </div>
-
         {!isHome && (
           <nav className={styles.social} aria-label={dict.contatti.social}>
             {socials.map((item) => (
@@ -58,24 +39,11 @@ export function Footer({ lang, site }: { lang: Locale; site: SiteInfo }) {
           </nav>
         )}
 
-        <section className={styles.legal} aria-label={dict.footer.legalTitle}>
-          <span className="eyebrow">{dict.footer.legalTitle}</span>
-          <ul className={styles.legalList}>
-            {legalRows.map((row) => (
-              <li key={row.label}>
-                <span className="mono">{row.label}</span>
-                <span className={isPlaceholder(row.value) ? styles.placeholder : undefined}>
-                  {row.value}
-                </span>
-              </li>
-            ))}
-          </ul>
-          <nav className={styles.legalLinks}>
-            <Link href={href(lang, "privacy")}>{dict.footer.privacy}</Link>
-            <Link href={href(lang, "cookie")}>{dict.footer.cookie}</Link>
-            <Link href={href(lang, "noteLegali")}>{dict.footer.legalNotes}</Link>
-          </nav>
-        </section>
+        <nav className={styles.legalLinks} aria-label={dict.footer.legalTitle}>
+          <Link href={href(lang, "privacy")}>{dict.footer.privacy}</Link>
+          <Link href={href(lang, "cookie")}>{dict.footer.cookie}</Link>
+          <Link href={href(lang, "noteLegali")}>{dict.footer.legalNotes}</Link>
+        </nav>
 
         <p className={styles.credit}>
           {dict.footer.creditLabel}{" "}

@@ -59,7 +59,7 @@ export function Header({ lang }: { lang: Locale }) {
             <Link
               key={key}
               href={href(lang, key)}
-              className={styles.navLink}
+              className={`${styles.navLink} ${key === "contatti" ? styles.navCta : ""}`}
               aria-current={isActive(key) ? "page" : undefined}
               transitionTypes={["nav-forward"]}
             >
