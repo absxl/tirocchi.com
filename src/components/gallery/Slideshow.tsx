@@ -19,8 +19,8 @@ export interface Slide {
 
 /**
  * Gallery slideshow: 3 slides on desktop, 2 on tablet, 1 on mobile. Autoplay
- * (paused on hover/focus/drag), side arrows, keyboard and drag/swipe.
- * Respects prefers-reduced-motion.
+ * (paused on hover/focus/drag), side arrows, keyboard, drag/swipe and
+ * trackpad horizontal scroll. Respects prefers-reduced-motion.
  */
 export function Slideshow({
   items,
@@ -42,6 +42,7 @@ export function Slideshow({
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const trackRef = useRef<HTMLUListElement>(null);
+  const viewportRef = useRef<HTMLDivElement>(null);
   const drag = useRef({ x: 0, active: false, moved: 0 });
 
   // Keep index in range when perView changes.
@@ -50,7 +51,8 @@ export function Slideshow({
     setIndex((i) => Math.max(0, Math.min(maxIndex, i)));
   }, [maxIndex]);
 
-  const go = useCallback(
+  // Move by one slide (wrap around).
+  const step = useCallback(
     (delta: number) => {
       setIndex((i) => {
         if (maxIndex === 0) return 0;
@@ -63,6 +65,14 @@ export function Slideshow({
     [maxIndex]
   );
 
+  // Move by a full "page" (used by the arrows and keyboard).
+  const page = useCallback(
+    (direction: number) => {
+      step(direction * Math.max(1, perView));
+    },
+    [step, perView]
+  );
+
   useEffect(() => {
     if (paused || maxIndex === 0 || prefersReducedMotion()) return;
     const id = window.setInterval(() => {
@@ -70,6 +80,29 @@ export function Slideshow({
     }, 4000);
     return () => window.clearInterval(id);
   }, [paused, maxIndex]);
+
+  // Trackpad / horizontal wheel scrolling.
+  useEffect(() => {
+    const element = viewportRef.current;
+    if (!element) return;
+    let accumulated = 0;
+    const onWheel = (event: WheelEvent) => {
+      // Only horizontal gestures (two-finger swipe on a trackpad).
+      if (Math.abs(event.deltaX) <= Math.abs(event.deltaY)) return;
+      event.preventDefault();
+      accumulated += event.deltaX;
+      const threshold = 45;
+      if (accumulated > threshold) {
+        step(1);
+        accumulated = 0;
+      } else if (accumulated < -threshold) {
+        step(-1);
+        accumulated = 0;
+      }
+    };
+    element.addEventListener("wheel", onWheel, { passive: false });
+    return () => element.removeEventListener("wheel", onWheel);
+  }, [step]);
 
   const setDrag = (value: number) => {
     trackRef.current?.style.setProperty("--drag", `${value}px`);
@@ -95,17 +128,17 @@ export function Slideshow({
     setDrag(0);
     setPaused(false);
     const threshold = 45;
-    if (dx <= -threshold) go(1);
-    else if (dx >= threshold) go(-1);
+    if (dx <= -threshold) step(1);
+    else if (dx >= threshold) step(-1);
   };
 
   const onKeyDown = (event: React.KeyboardEvent) => {
     if (event.key === "ArrowLeft") {
       event.preventDefault();
-      go(-1);
+      page(-1);
     } else if (event.key === "ArrowRight") {
       event.preventDefault();
-      go(1);
+      page(1);
     }
   };
 
@@ -123,7 +156,7 @@ export function Slideshow({
       onBlurCapture={() => setPaused(false)}
       onKeyDown={onKeyDown}
     >
-      <div className={styles.viewport}>
+      <div className={styles.viewport} ref={viewportRef}>
         <ul
           ref={trackRef}
           className={styles.track}
@@ -167,7 +200,7 @@ export function Slideshow({
             <button
               type="button"
               className={`${styles.nav} ${styles.prev}`}
-              onClick={() => go(-1)}
+              onClick={() => page(-1)}
               aria-label={prevLabel}
             >
               ‹
@@ -175,7 +208,7 @@ export function Slideshow({
             <button
               type="button"
               className={`${styles.nav} ${styles.next}`}
-              onClick={() => go(1)}
+              onClick={() => page(1)}
               aria-label={nextLabel}
             >
               ›
