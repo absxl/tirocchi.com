@@ -51,9 +51,9 @@
   --radius: 12px;
   --radius-l: 20px;
   --radius-pill: 999px;
-  --dur: 0.25s;
-  --dur-slow: 0.6s;
-  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 0.3s;
+  --dur-slow: 0.7s;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
 
   /* Liquid glass — superfici in vetro */
   --glass-blur: 16px;

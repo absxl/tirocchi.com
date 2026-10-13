@@ -1,7 +1,7 @@
 export const MOTION = {
   ease: "power3.out",
   easeIn: "power3.in",
-  dur: { fast: 0.3, base: 0.65, slow: 1 },
+  dur: { fast: 0.35, base: 0.8, slow: 1.1 },
   stagger: 0.05,
 } as const;
 

@@ -11,12 +11,10 @@ export function LegalPage({
   title,
   sections,
   updated,
-  disclaimer,
 }: {
   title: string;
   sections: LegalSection[];
   updated: string;
-  disclaimer: string;
 }) {
   return (
     <PageTransition>
@@ -37,8 +35,6 @@ export function LegalPage({
             </Reveal>
           ))}
         </ol>
-
-        <p className={styles.disclaimer}>{disclaimer}</p>
       </div>
     </PageTransition>
   );

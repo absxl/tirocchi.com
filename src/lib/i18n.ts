@@ -147,8 +147,6 @@ const it = {
   },
   legal: {
     updated: "Ultimo aggiornamento: 13 ottobre 2026",
-    disclaimer:
-      "Testo informativo a tutela degli utenti e del titolare; per l’uso definitivo è consigliata la validazione da parte di un professionista.",
     privacy: {
       title: "Privacy Policy",
       sections: [
@@ -353,8 +351,6 @@ const en: typeof it = {
   },
   legal: {
     updated: "Last updated: 13 October 2026",
-    disclaimer:
-      "Informational text for the protection of users and the owner; for definitive use, review by a professional is recommended.",
     privacy: {
       title: "Privacy Policy",
       sections: [

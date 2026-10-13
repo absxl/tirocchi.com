@@ -16,7 +16,6 @@ export default function Page() {
       title={dict.legal.notes.title}
       sections={dict.legal.notes.sections}
       updated={dict.legal.updated}
-      disclaimer={dict.legal.disclaimer}
     />
   );
 }

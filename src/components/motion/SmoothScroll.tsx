@@ -18,8 +18,8 @@ export function SmoothScroll() {
     if (HOME_PATHS.has(normalized)) return;
 
     const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      // Frame-based smoothing: smoother than a fixed duration.
+      lerp: 0.085,
       smoothWheel: true,
       wheelMultiplier: 0.9,
       touchMultiplier: 1.4,

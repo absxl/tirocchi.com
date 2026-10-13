@@ -16,7 +16,6 @@ export default function Page() {
       title={dict.legal.cookie.title}
       sections={dict.legal.cookie.sections}
       updated={dict.legal.updated}
-      disclaimer={dict.legal.disclaimer}
     />
   );
 }

@@ -99,7 +99,7 @@ export function RoomScene({
       const y = start + (room / Math.max(1, rooms.length - 1)) * (end - start);
       const duration = prefersReducedMotion()
         ? 0
-        : clamp(0.55 * Math.abs(room - from), 0.6, 1.6);
+        : clamp(0.7 * Math.abs(room - from), 0.9, 1.9);
 
       gsap.to(window, {
         scrollTo: { y, autoKill: false },
