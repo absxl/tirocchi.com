@@ -74,9 +74,9 @@ Sintesi delle scelte fatte e del perché, in coerenza con i file 03 (landing), 0
 
 ## Layout (file 04)
 
-- `/lavori`: **slideshow** (2 slide su desktop, 1 su mobile) con **autoplay ~4s** (pausa su
-  hover/focus/drag), frecce, tastiera e swipe; card a **rapporto 4:5**. **Nessun filtro**
-  (ci sono solo progetti ADV). **Toggle Slideshow/Lista** (stato in `?view=`).
+- `/lavori`: **griglia** `auto-fill` (min 16rem), card con cover + cliente · anno + titolo e **tilt
+  al cursore**. **Nessun filtro** (ci sono solo progetti ADV). **Toggle Griglia/Lista**
+  (stato in `?view=`).
 - Vista **Lista** = righe testuali (titolo + cliente) con **anteprima immagine quadrata che segue il
   cursore** su desktop (equivalente dello stile nicparanoia), disattivata su touch.
 - `/lavori/[slug]`: header con cliente/anno/ruolo/formati, intro, sezioni Contesto/Insight/Idea/

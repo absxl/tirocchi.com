@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { getDictionary, projectHref } from "@/lib/i18n";
 import type { Locale } from "@/lib/types";
-import { Slideshow } from "@/components/gallery/Slideshow";
+import { SmartImage } from "@/components/SmartImage";
 import { PageTransition } from "@/components/motion/PageTransition";
 import { Reveal } from "@/components/motion/Reveal";
 import styles from "./LavoriView.module.css";
@@ -22,11 +22,11 @@ export interface LavoriProject {
   role: string;
 }
 
-type ViewKey = "gallery" | "list";
+type ViewKey = "grid" | "list";
 
 export function LavoriView({ lang, projects }: { lang: Locale; projects: LavoriProject[] }) {
   const dict = getDictionary(lang);
-  const [view, setView] = useState<ViewKey>("gallery");
+  const [view, setView] = useState<ViewKey>("grid");
   const [preview, setPreview] = useState<{ src: string; alt: string } | null>(null);
   const [pointer, setPointer] = useState({ x: 0, y: 0 });
   const finePointer = useRef(false);
@@ -36,15 +36,33 @@ export function LavoriView({ lang, projects }: { lang: Locale; projects: LavoriP
     const v = new URLSearchParams(window.location.search).get("view");
     // One-time sync from the URL query into React state on mount.
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    if (v === "list" || v === "gallery") setView(v);
+    if (v === "list" || v === "grid") setView(v);
   }, []);
 
   const changeView = (key: ViewKey) => {
     setView(key);
     const params = new URLSearchParams();
-    if (key !== "gallery") params.set("view", key);
+    if (key !== "grid") params.set("view", key);
     const query = params.toString();
     window.history.replaceState(null, "", `${window.location.pathname}${query ? `?${query}` : ""}`);
+  };
+
+  const onCardMove = (event: React.PointerEvent<HTMLAnchorElement>) => {
+    if (!finePointer.current) return;
+    const element = event.currentTarget;
+    const rect = element.getBoundingClientRect();
+    const x = (event.clientX - rect.left) / rect.width;
+    const y = (event.clientY - rect.top) / rect.height;
+    element.style.setProperty("--mx", `${(x * 100).toFixed(1)}%`);
+    element.style.setProperty("--my", `${(y * 100).toFixed(1)}%`);
+    element.style.setProperty("--rx", `${((0.5 - y) * 7).toFixed(2)}deg`);
+    element.style.setProperty("--ry", `${((x - 0.5) * 7).toFixed(2)}deg`);
+  };
+
+  const onCardLeave = (event: React.PointerEvent<HTMLAnchorElement>) => {
+    const element = event.currentTarget;
+    element.style.setProperty("--rx", "0deg");
+    element.style.setProperty("--ry", "0deg");
   };
 
   return (
@@ -57,7 +75,7 @@ export function LavoriView({ lang, projects }: { lang: Locale; projects: LavoriP
 
         <div className={styles.toolbar}>
           <div className={styles.views} role="group" aria-label={dict.lavori.title}>
-            {(["gallery", "list"] as ViewKey[]).map((key) => (
+            {(["grid", "list"] as ViewKey[]).map((key) => (
               <button
                 key={key}
                 type="button"
@@ -65,7 +83,7 @@ export function LavoriView({ lang, projects }: { lang: Locale; projects: LavoriP
                 aria-pressed={view === key}
                 onClick={() => changeView(key)}
               >
-                {key === "gallery" ? dict.lavori.viewGrid : dict.lavori.viewList}
+                {key === "grid" ? dict.lavori.viewGrid : dict.lavori.viewList}
               </button>
             ))}
           </div>
@@ -73,21 +91,31 @@ export function LavoriView({ lang, projects }: { lang: Locale; projects: LavoriP
 
         {projects.length === 0 ? (
           <p className={styles.empty}>{dict.lavori.empty}</p>
-        ) : view === "gallery" ? (
-          <Slideshow
-            label={dict.lavori.title}
-            prevLabel={dict.progetto.previous}
-            nextLabel={dict.progetto.next}
-            sizes="(min-width: 768px) 46vw, 92vw"
-            items={projects.map((project) => ({
-              id: project.slug,
-              image: project.cover,
-              alt: project.coverAlt,
-              title: project.title,
-              meta: `${project.client} · ${project.year}`,
-              href: projectHref(lang, project.slug),
-            }))}
-          />
+        ) : view === "grid" ? (
+          <Reveal as="ul" className={styles.grid} stagger>
+            {projects.map((project) => (
+              <li key={project.slug}>
+                <Link
+                  href={projectHref(lang, project.slug)}
+                  className={styles.card}
+                  onPointerMove={onCardMove}
+                  onPointerLeave={onCardLeave}
+                >
+                  <span className={styles.cardMedia}>
+                    <SmartImage
+                      src={project.cover}
+                      alt={project.coverAlt}
+                      sizes="(min-width: 1200px) 20rem, (min-width: 640px) 45vw, 90vw"
+                    />
+                  </span>
+                  <span className={`mono ${styles.cardMeta}`}>
+                    {project.client} · {project.year}
+                  </span>
+                  <span className={styles.cardTitle}>{project.title}</span>
+                </Link>
+              </li>
+            ))}
+          </Reveal>
         ) : (
           <ul
             className={styles.list}
