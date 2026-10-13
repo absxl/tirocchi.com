@@ -16,18 +16,10 @@ export interface GalleryCategory {
   count: number;
 }
 
-const SFONDI = [
-  { image: "/assets/sfondi/1.png", title: "Ritratto 1" },
-  { image: "/assets/sfondi/2.png", title: "Ritratto 2" },
-  { image: "/assets/sfondi/3.png", title: "Ritratto 3" },
-  { image: "/assets/sfondi/portfolio.webp", title: "Campagna" },
-  { image: "/assets/sfondi/black.webp", title: "Nero" },
-];
-
 /**
- * Builds the Creatività gallery procedurally from all the site's images,
- * grouped by category: project images (ADV), the personal archive image
- * categories, and the section backgrounds. Videos are excluded.
+ * Builds the Creatività gallery procedurally from the site's images, grouped by
+ * category: project images (ADV) and the personal archive image categories.
+ * Videos are excluded.
  */
 export function getGallery(): { categories: GalleryCategory[]; items: GalleryItem[] } {
   const categories: GalleryCategory[] = [];
@@ -91,26 +83,6 @@ export function getGallery(): { categories: GalleryCategory[]; items: GalleryIte
       description: category.description,
       cover: category.cover,
       count: images.length,
-    });
-  }
-
-  // Section backgrounds.
-  if (SFONDI.length) {
-    SFONDI.forEach((item, i) => {
-      items.push({
-        id: `sfondi-${i}`,
-        category: "sfondi",
-        image: item.image,
-        title: item.title,
-        meta: "Sfondo",
-      });
-    });
-    categories.push({
-      slug: "sfondi",
-      title: "SFONDI",
-      description: "Sfondi e ritratti usati nelle sezioni del sito.",
-      cover: "/assets/sfondi/1.png",
-      count: SFONDI.length,
     });
   }
 

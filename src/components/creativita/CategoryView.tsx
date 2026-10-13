@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getDictionary, href } from "@/lib/i18n";
 import type { Locale } from "@/lib/types";
 import type { GalleryCategory, GalleryItem } from "@/lib/gallery";
-import { ArchiveGallery } from "./ArchiveGallery";
+import { CategoryGallery } from "./CategoryGallery";
 import { PageTransition } from "@/components/motion/PageTransition";
 import styles from "./Creativita.module.css";
 
@@ -33,7 +33,7 @@ export function CategoryView({
       </header>
 
       {items.length > 0 ? (
-        <ArchiveGallery lang={lang} items={items} />
+        <CategoryGallery lang={lang} items={items} />
       ) : (
         <p className={styles.intro}>{dict.creativita.empty}</p>
       )}

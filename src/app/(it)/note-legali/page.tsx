@@ -15,7 +15,6 @@ export default function Page() {
     <LegalPage
       title={dict.legal.notes.title}
       body={dict.legal.notes.body}
-      note={dict.legal.draftNote}
     />
   );
 }

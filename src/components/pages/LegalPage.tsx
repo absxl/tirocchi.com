@@ -1,15 +1,7 @@
 import { PageTransition } from "@/components/motion/PageTransition";
 import styles from "./SimplePages.module.css";
 
-export function LegalPage({
-  title,
-  body,
-  note,
-}: {
-  title: string;
-  body: string;
-  note: string;
-}) {
+export function LegalPage({ title, body }: { title: string; body: string }) {
   return (
     <PageTransition>
       <div className={`container ${styles.wrap}`}>
@@ -18,7 +10,6 @@ export function LegalPage({
         </header>
         <section className={styles.section}>
           <p className={styles.lead}>{body}</p>
-          <p className={styles.placeholder}>{note}</p>
         </section>
       </div>
     </PageTransition>

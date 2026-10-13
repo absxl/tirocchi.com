@@ -13,6 +13,8 @@ export function Footer({ lang, site }: { lang: Locale; site: SiteInfo }) {
   const pathname = usePathname();
   const year = new Date().getFullYear();
   const isHome = pathname === href(lang, "home");
+  const isContact = pathname === href(lang, "contatti");
+  const hideSocial = isHome || isContact;
 
   const socials = [
     { label: "Instagram", url: site.social.instagram },
@@ -23,7 +25,7 @@ export function Footer({ lang, site }: { lang: Locale; site: SiteInfo }) {
   return (
     <footer className={styles.footer}>
       <div className={styles.inner}>
-        {!isHome && (
+        {!hideSocial && (
           <nav className={styles.social} aria-label={dict.contatti.social}>
             {socials.map((item) => (
               <a

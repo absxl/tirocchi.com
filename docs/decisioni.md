@@ -83,12 +83,15 @@ Sintesi delle scelte fatte e del perché, in coerenza con i file 03 (landing), 0
   Sviluppo, **galleria a colonna unica**: immagini a piena larghezza, rapporto naturale e
   **attaccate (gap 0), senza divisori** (come il vecchio sito); hero separato; crediti, navigazione
   precedente/successivo + "Tutti i lavori". Video con `poster` e `preload="metadata"`.
-- `/creativita`: indice a **griglia di card-categoria** + **reel copertine esplorabile col cursore**;
-  `/creativita/[categoria]`: **slideshow** (2/1, autoplay + manuale) con **tutte le immagini della
-  categoria** e **viewer** accessibile al click (dialog, ESC, tastiera ← →).
-- **Galleria procedurale**: le categorie e le immagini di Creatività sono generate da tutto il sito
-  (`src/lib/gallery.ts`) — progetti ADV (cover + immagini), categorie dell'archivio personale,
-  sfondi di sezione — assegnate per categoria; **video esclusi**.
+- `/creativita`: indice a **griglia di card-categoria** + **slideshow** della galleria cover-art
+  (2/1, autoplay + manuale); `/creativita/[categoria]`: **griglia/lista** (come l'ADV Portfolio) con
+  **tutte le immagini della categoria** e **viewer** al click (dialog, ESC, tastiera ← →).
+- **Immagini a rapporto originale** (nessun crop 4:5) in griglia, lista e slideshow.
+- **Viewer a schermo**: `grid-template-rows: auto minmax(0, 1fr) auto` così l'immagine **entra
+  sempre** nello spazio tra header e barra.
+- **Galleria procedurale**: le categorie e le immagini di Creatività sono generate dal sito
+  (`src/lib/gallery.ts`) — progetti ADV (cover + immagini) e categorie dell'archivio personale;
+  **video esclusi**; la categoria "SFONDI" è stata rimossa.
 - Header sticky con nome + menu; su mobile menu a pannello full-screen.
 
 ## Stile e movimento (file 05)
@@ -148,6 +151,11 @@ Sintesi delle scelte fatte e del perché, in coerenza con i file 03 (landing), 0
 - **Dati CV di Matteo** inseriti in `src/content/site.json` (profilo, competenze tecniche, soft
   skills, esperienza, istruzione, location) e mostrati in `/about`; contatto **matteo@tirocchi.com**
   (cellulare rimosso dal sito).
+- **Pulizia "vibe coded"**: rimossi testi segnaposto (`[DA COMPILARE]`, note legali "da completare",
+  "Categoria in arrivo"), chiavi i18n inutilizzate e il blocco legale; IT reso coerente ("Chi sono",
+  "Competenze trasversali"). Social **deduplicati** in About/Contatti (footer nascosto lì).
+- **Mobile**: header/menu raggiungibile in cima alla home, scrim più leggero, `100dvh` per coprire
+  il fondo (niente "box colorato"), fondo meno affollato (frecce nascoste, social sopra i capitoli).
 
 ## Lingue
 

@@ -59,12 +59,6 @@ export interface SiteInfo {
   experience: { period: string; role: string; detail: string }[];
   education: { year: string; title: string; institution: string }[];
   awards: { year: string; title: string; detail: string; url?: string }[];
-  legal: {
-    vat: string;
-    taxCode: string;
-    address: string;
-    pec: string;
-  };
 }
 
 export interface ArchiveItem {

@@ -27,7 +27,7 @@ html::-webkit-scrollbar {
 }
 
 body {
-  min-height: 100svh;
+  min-height: 100dvh;
   background: var(--bg);
   color: var(--fg);
   font-family: var(--font-body);

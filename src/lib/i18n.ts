@@ -52,7 +52,7 @@ const it = {
   nav: {
     lavori: "ADV Portfolio",
     creativita: "Creatività",
-    about: "About",
+    about: "Chi sono",
     contatti: "Contact Me",
   },
   common: {
@@ -60,17 +60,13 @@ const it = {
     close: "Chiudi",
     openMenu: "Apri il menu",
     closeMenu: "Chiudi il menu",
-    back: "Indietro",
     backToTop: "Torna su",
     language: "Lingua",
-    draft: "[DA REVISIONARE]",
   },
   landing: {
     name: "MATTEO TIROCCHI",
     roleLine: "Art Director — ADV Portfolio",
     scrollHint: "Scorri",
-    hintPointer: "Passa sul nome",
-    loading: "Caricamento",
     chapters: "Capitoli",
     explore: "Esplora",
     sectionDesc: {
@@ -83,7 +79,6 @@ const it = {
   lavori: {
     title: "ADV Portfolio",
     intro: "Campagne e progetti di art direction.",
-    filters: { all: "Tutti", adv: "ADV", personal: "Personal" },
     viewGrid: "Griglia",
     viewList: "Lista",
     empty: "Nessun progetto in questa categoria.",
@@ -117,31 +112,24 @@ const it = {
     next: "Successiva",
     backToCategories: "Categorie",
     image: "Immagine",
-    video: "Video",
-    empty: "Categoria in arrivo.",
+    empty: "Nessuna opera.",
   },
   about: {
     eyebrow: "Chi sono",
-    title: "About",
+    title: "Chi sono",
     profile: "Profilo",
-    bio: "Bio",
     experience: "Esperienza professionale",
     education: "Istruzione e formazione",
     skills: "Competenze tecniche",
-    softSkills: "Soft skills",
+    softSkills: "Competenze trasversali",
     awards: "Riconoscimenti",
-    personalData: "Dati personali",
     contact: "Contatti",
-    phone: "Cellulare",
-    portfolio: "Behance / Portfolio",
-    draftNote: "Questa sezione è in attesa dei contenuti definitivi.",
   },
   contatti: {
     eyebrow: "Contatti",
     title: "Contatti",
     intro: "Scrivimi per progetti, collaborazioni e art direction.",
     email: "Email",
-    phone: "Cellulare",
     social: "Social",
   },
   footer: {
@@ -157,19 +145,17 @@ const it = {
     creditLabel: "Sito realizzato da",
   },
   legal: {
-    draftNote:
-      "Testo segnaposto: da completare con i dati reali e far validare a un professionista.",
     privacy: {
       title: "Privacy Policy",
-      body: "Informativa sul trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR). Titolare del trattamento, finalità, base giuridica, destinatari, tempi di conservazione e diritti dell’interessato. [DA COMPILARE]",
+      body: "Informativa sul trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR).",
     },
     cookie: {
       title: "Cookie Policy",
-      body: "Informativa sull’uso dei cookie. Il sito non utilizza cookie di profilazione né tracker di terze parti. [DA COMPILARE]",
+      body: "Il sito non utilizza cookie di profilazione né tracker di terze parti.",
     },
     notes: {
       title: "Note legali",
-      body: "Informazioni legali sul titolare del sito, sui contenuti e sulla proprietà intellettuale. [DA COMPILARE]",
+      body: "Informazioni legali sul titolare del sito, sui contenuti e sulla proprietà intellettuale.",
     },
   },
   notFound: {
@@ -193,17 +179,13 @@ const en: typeof it = {
     close: "Close",
     openMenu: "Open menu",
     closeMenu: "Close menu",
-    back: "Back",
     backToTop: "Back to top",
     language: "Language",
-    draft: "[TO REVIEW]",
   },
   landing: {
     name: "MATTEO TIROCCHI",
     roleLine: "Art Director — ADV Portfolio",
     scrollHint: "Scroll",
-    hintPointer: "Hover the name",
-    loading: "Loading",
     chapters: "Chapters",
     explore: "Explore",
     sectionDesc: {
@@ -216,7 +198,6 @@ const en: typeof it = {
   lavori: {
     title: "ADV Portfolio",
     intro: "Advertising campaigns and art direction projects.",
-    filters: { all: "All", adv: "ADV", personal: "Personal" },
     viewGrid: "Grid",
     viewList: "List",
     empty: "No projects in this category.",
@@ -250,31 +231,24 @@ const en: typeof it = {
     next: "Next",
     backToCategories: "Categories",
     image: "Image",
-    video: "Video",
-    empty: "Category coming soon.",
+    empty: "No works.",
   },
   about: {
     eyebrow: "Who I am",
     title: "About",
     profile: "Profile",
-    bio: "Bio",
     experience: "Professional experience",
     education: "Education and training",
     skills: "Technical skills",
     softSkills: "Soft skills",
     awards: "Awards",
-    personalData: "Personal data",
     contact: "Contact",
-    phone: "Phone",
-    portfolio: "Behance / Portfolio",
-    draftNote: "This section is waiting for final content.",
   },
   contatti: {
     eyebrow: "Contact",
     title: "Contact",
     intro: "Get in touch for projects, collaborations and art direction.",
     email: "Email",
-    phone: "Phone",
     social: "Social",
   },
   footer: {
@@ -290,19 +264,17 @@ const en: typeof it = {
     creditLabel: "Website by",
   },
   legal: {
-    draftNote:
-      "Placeholder text: to be completed with real data and reviewed by a professional.",
     privacy: {
       title: "Privacy Policy",
-      body: "Information on the processing of personal data under Regulation (EU) 2016/679 (GDPR). Data controller, purposes, legal basis, recipients, retention and data subject rights. [TO REVIEW]",
+      body: "Information on the processing of personal data under Regulation (EU) 2016/679 (GDPR).",
     },
     cookie: {
       title: "Cookie Policy",
-      body: "Information on the use of cookies. This site does not use profiling cookies or third-party trackers. [TO REVIEW]",
+      body: "This site does not use profiling cookies or third-party trackers.",
     },
     notes: {
       title: "Legal notes",
-      body: "Legal information about the site owner, the content and intellectual property. [TO REVIEW]",
+      body: "Legal information about the site owner, the content and intellectual property.",
     },
   },
   notFound: {

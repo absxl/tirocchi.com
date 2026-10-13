@@ -13,6 +13,7 @@ import {
 } from "@/lib/i18n";
 import type { Locale } from "@/lib/types";
 import { useDialog } from "@/lib/useDialog";
+import { useMediaQuery } from "@/lib/useMediaQuery";
 import { useScrolledPast } from "@/lib/useScrolledPast";
 import { useScrollProgress } from "@/lib/useScrollProgress";
 import styles from "./Header.module.css";
@@ -28,11 +29,13 @@ export function Header({ lang }: { lang: Locale }) {
   const headerRef = useRef<HTMLElement>(null);
   const isHome = pathname === href(lang, "home");
   const revealed = useScrolledPast(0.12);
+  const mobile = useMediaQuery("(max-width: 900px)");
 
   useScrollProgress(headerRef, isHome && !menuOpen);
   useDialog(menuOpen, () => setMenuOpen(false), panelRef);
 
-  const hidden = isHome && !revealed && !menuOpen;
+  // On mobile the header stays visible on the home so the menu is reachable.
+  const hidden = isHome && !revealed && !menuOpen && !mobile;
 
   const isActive = (key: RouteKey) => {
     const target = href(lang, key);

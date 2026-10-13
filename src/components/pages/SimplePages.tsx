@@ -139,7 +139,6 @@ export function AboutView({ lang, site }: { lang: Locale; site: SiteInfo }) {
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>{dict.about.contact}</h2>
           <EmailBlock lang={lang} site={site} />
-          <SocialList lang={lang} site={site} />
         </section>
       </div>
     </PageTransition>

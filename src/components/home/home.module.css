@@ -1,12 +1,12 @@
 .homeScroll {
   position: relative;
-  height: calc(var(--rooms, 6) * 100svh);
+  height: calc(var(--rooms, 6) * 100dvh);
 }
 
 .scene {
   position: sticky;
   top: 0;
-  height: 100svh;
+  height: 100dvh;
   overflow: hidden;
   background: #05070a;
   isolation: isolate;
@@ -376,6 +376,24 @@
     display: none;
   }
 
+  /* Lighter scrim so the photo stays visible at the bottom on mobile. */
+  .scrim {
+    opacity: 0.62;
+  }
+
+  /* Less crowded bottom: hide arrows (swipe works), stack social above chapters. */
+  .arrows {
+    display: none;
+  }
+
+  .social {
+    bottom: calc(var(--space-l) + 3.2rem);
+  }
+
+  .chapter {
+    bottom: var(--space-l);
+  }
+
   .name {
     font-size: clamp(1.7rem, 8.5vw, 3.6rem);
   }
@@ -396,9 +414,5 @@
 
   .panelDesc {
     max-width: none;
-  }
-
-  .chapter {
-    bottom: calc(var(--space-l) + 3.6rem);
   }
 }

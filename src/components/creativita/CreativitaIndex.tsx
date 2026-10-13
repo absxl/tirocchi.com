@@ -3,7 +3,7 @@ import { categoryHref, getDictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/types";
 import type { GalleryCategory, GalleryItem } from "@/lib/gallery";
 import { SmartImage } from "@/components/SmartImage";
-import { CoverReel } from "./CoverReel";
+import { Slideshow } from "@/components/gallery/Slideshow";
 import { PageTransition } from "@/components/motion/PageTransition";
 import { Reveal } from "@/components/motion/Reveal";
 import styles from "./Creativita.module.css";
@@ -54,9 +54,19 @@ export function CreativitaIndex({
       {reel.length > 0 && (
         <section className={styles.reelSection} aria-label={dict.progetto.gallery}>
           <span className="eyebrow">{dict.progetto.gallery}</span>
-          <CoverReel
-            items={reel.map((item) => ({ title: item.title, image: item.image }))}
-            hint={dict.creativita.reelHint}
+          <Slideshow
+            label={dict.progetto.gallery}
+            prevLabel={dict.creativita.previous}
+            nextLabel={dict.creativita.next}
+            sizes="(min-width: 768px) 46vw, 92vw"
+            items={reel.map((item) => ({
+              id: item.id,
+              image: item.image,
+              alt: item.title,
+              title: item.title,
+              meta: item.meta,
+              href: categoryHref(lang, "cover-art"),
+            }))}
           />
         </section>
       )}
