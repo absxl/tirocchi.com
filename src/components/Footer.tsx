@@ -12,9 +12,11 @@ export function Footer({ lang, site }: { lang: Locale; site: SiteInfo }) {
   const dict = getDictionary(lang);
   const pathname = usePathname();
   const year = new Date().getFullYear();
-  const isHome = pathname === href(lang, "home");
-  const isContact = pathname === href(lang, "contatti");
-  const isAbout = pathname === href(lang, "about");
+  // Trailing-slash safe comparison (trailingSlash: true → pathname ends with "/").
+  const norm = (value: string) => value.replace(/\/+$/, "") || "/";
+  const isHome = norm(pathname) === norm(href(lang, "home"));
+  const isContact = norm(pathname) === norm(href(lang, "contatti"));
+  const isAbout = norm(pathname) === norm(href(lang, "about"));
   const hideSocial = isHome || isContact || isAbout;
 
   const socials = [

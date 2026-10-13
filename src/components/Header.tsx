@@ -27,7 +27,8 @@ export function Header({ lang }: { lang: Locale }) {
   const panelRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const headerRef = useRef<HTMLElement>(null);
-  const isHome = pathname === href(lang, "home");
+  const norm = (value: string) => value.replace(/\/+$/, "") || "/";
+  const isHome = norm(pathname) === norm(href(lang, "home"));
   const revealed = useScrolledPast(0.12);
   const mobile = useMediaQuery("(max-width: 900px)");
 
@@ -39,9 +40,10 @@ export function Header({ lang }: { lang: Locale }) {
   const hidden = isHome && !revealed && !menuOpen && !mobile;
 
   const isActive = (key: RouteKey) => {
-    const target = href(lang, key);
-    if (key === "home") return pathname === target;
-    return pathname === target || pathname.startsWith(`${target}/`);
+    const target = norm(href(lang, key));
+    const current = norm(pathname);
+    if (key === "home") return current === target;
+    return current === target || current.startsWith(`${target}/`);
   };
 
   return (

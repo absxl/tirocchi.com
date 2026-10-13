@@ -14,7 +14,7 @@ export interface StripImage {
   title: string;
 }
 
-function SocialList({ lang, site }: { lang: Locale; site: SiteInfo }) {
+function SocialBig({ lang, site }: { lang: Locale; site: SiteInfo }) {
   const dict = getDictionary(lang);
   const socials = [
     { label: "Instagram", url: site.social.instagram },
@@ -22,16 +22,17 @@ function SocialList({ lang, site }: { lang: Locale; site: SiteInfo }) {
     { label: "LinkedIn", url: site.social.linkedin },
   ].filter((item) => item.url);
   return (
-    <nav className={styles.social} aria-label={dict.contatti.social}>
+    <nav className={styles.socialBig} aria-label={dict.contatti.social}>
       {socials.map((item) => (
         <a
           key={item.label}
           href={item.url}
           target="_blank"
           rel="noopener noreferrer"
-          className={`link-underline ${styles.socialLink}`}
+          className={styles.socialBigLink}
         >
-          {item.label}
+          <SocialIcon label={item.label} size={26} />
+          <span>{item.label}</span>
         </a>
       ))}
     </nav>
@@ -73,11 +74,6 @@ export function AboutView({
   strip: StripImage[];
 }) {
   const dict = getDictionary(lang);
-  const socials = [
-    { label: "Instagram", url: site.social.instagram },
-    { label: "Behance", url: site.social.behance },
-    { label: "LinkedIn", url: site.social.linkedin },
-  ].filter((item) => item.url);
 
   return (
     <PageTransition>
@@ -160,20 +156,7 @@ export function AboutView({
         <Reveal as="section" className={styles.section}>
           <SectionTitle no="06">{dict.about.contact}</SectionTitle>
           <EmailBlock lang={lang} site={site} />
-          <nav className={styles.socialBig} aria-label={dict.contatti.social}>
-            {socials.map((item) => (
-              <a
-                key={item.label}
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.socialBigLink}
-              >
-                <SocialIcon label={item.label} size={26} />
-                <span>{item.label}</span>
-              </a>
-            ))}
-          </nav>
+          <SocialBig lang={lang} site={site} />
         </Reveal>
 
         {strip.length > 0 && (
@@ -203,7 +186,7 @@ export function ContactView({ lang, site }: { lang: Locale; site: SiteInfo }) {
         </header>
 
         <EmailBlock lang={lang} site={site} />
-        <SocialList lang={lang} site={site} />
+        <SocialBig lang={lang} site={site} />
 
         <Link href={href(lang, "lavori")} className={styles.backLink}>
           {dict.lavori.title}
