@@ -55,7 +55,7 @@ export function buildRooms({ lang, dict }: { lang: Locale; dict: Dictionary }): 
       label: dict.nav.contatti,
       desc: dict.landing.sectionDesc.contatti,
       href: href(lang, "contatti"),
-      image: "/assets/sfondi/portfolio.webp",
+      image: "/assets/sfondi/black.webp",
       accent: ACCENT.contatti,
     },
   ];

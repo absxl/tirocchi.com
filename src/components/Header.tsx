@@ -31,7 +31,8 @@ export function Header({ lang }: { lang: Locale }) {
   const revealed = useScrolledPast(0.12);
   const mobile = useMediaQuery("(max-width: 900px)");
 
-  useScrollProgress(headerRef, isHome && !menuOpen);
+  // On mobile keep the header fully revealed on the home so the menu is reachable.
+  useScrollProgress(headerRef, isHome && !menuOpen && !mobile);
   useDialog(menuOpen, () => setMenuOpen(false), panelRef);
 
   // On mobile the header stays visible on the home so the menu is reachable.
