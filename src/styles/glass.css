@@ -3,8 +3,9 @@
    (top più chiaro, lati/basso più deboli) e sheen diagonale in screen.
    La rifrazione SVG (.glass--refract) è Chromium-only, dietro @supports. */
 
+/* NB: no `position` here — the elements that use `.glass` (header, panel)
+   are already positioned (sticky/fixed) and must keep their own position. */
 .glass {
-  position: relative;
   isolation: isolate;
   background: var(--glass-tint);
   border: 1px solid var(--glass-rim);
