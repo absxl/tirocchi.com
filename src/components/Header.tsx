@@ -45,6 +45,7 @@ export function Header({ lang }: { lang: Locale }) {
   };
 
   return (
+    <>
     <header
       ref={headerRef}
       className={`${styles.header} ${isHome ? styles.fixed : ""}`}
@@ -99,6 +100,7 @@ export function Header({ lang }: { lang: Locale }) {
           </button>
         </div>
       </div>
+    </header>
 
       {menuOpen && (
         <div
@@ -129,6 +131,6 @@ export function Header({ lang }: { lang: Locale }) {
           </nav>
         </div>
       )}
-    </header>
+    </>
   );
 }
