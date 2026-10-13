@@ -14,7 +14,9 @@ export default function Page() {
   return (
     <LegalPage
       title={dict.legal.notes.title}
-      body={dict.legal.notes.body}
+      sections={dict.legal.notes.sections}
+      updated={dict.legal.updated}
+      disclaimer={dict.legal.disclaimer}
     />
   );
 }

@@ -31,6 +31,14 @@
   gap: var(--space-l) var(--space-m);
 }
 
+/* Desktop: all 5 categories in one row, smaller, without overflowing. */
+@media (min-width: 1024px) {
+  .categories {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: var(--space-m) var(--space-s);
+  }
+}
+
 .categoryCard {
   display: grid;
   gap: var(--space-xs);

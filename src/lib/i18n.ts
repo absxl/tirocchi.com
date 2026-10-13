@@ -146,17 +146,103 @@ const it = {
     creditLabel: "Sito realizzato da",
   },
   legal: {
+    updated: "Ultimo aggiornamento: 13 ottobre 2026",
+    disclaimer:
+      "Testo informativo a tutela degli utenti e del titolare; per l’uso definitivo è consigliata la validazione da parte di un professionista.",
     privacy: {
       title: "Privacy Policy",
-      body: "Informativa sul trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR).",
+      sections: [
+        {
+          title: "Titolare del trattamento",
+          body: "Il titolare del trattamento è Matteo Tirocchi. Per qualsiasi richiesta relativa ai dati personali puoi scrivere a matteo@tirocchi.com.",
+        },
+        {
+          title: "Dati trattati",
+          body: "Questo sito non utilizza form di contatto, cookie di profilazione o strumenti di tracciamento. I dati personali possono essere trattati in due casi: dati di navigazione (indirizzo IP, tipo di browser e dispositivo, data e ora della visita) registrati automaticamente dai log del servizio di hosting per finalità di sicurezza e funzionamento; dati forniti volontariamente, se ci scrivi via email (indirizzo e contenuto del messaggio).",
+        },
+        {
+          title: "Finalità e base giuridica",
+          body: "I dati di navigazione sono trattati per garantire sicurezza e corretto funzionamento del sito (legittimo interesse, art. 6.1.f GDPR). I dati inviati via email sono trattati per rispondere alla richiesta (esecuzione di un contratto o di misure precontrattuali, art. 6.1.b, o legittimo interesse, art. 6.1.f).",
+        },
+        {
+          title: "Modalità e hosting",
+          body: "Il sito è statico ed è ospitato su Cloudflare Pages (Cloudflare, Inc.). Il provider può trattare i dati di log per erogare il servizio e garantirne la sicurezza. Il trattamento avviene con strumenti informatici e misure di sicurezza adeguate.",
+        },
+        {
+          title: "Cookie",
+          body: "Il sito non utilizza cookie di profilazione né tracker di terze parti; sono utilizzabili solo eventuali cookie tecnici necessari. Per i dettagli vedi la Cookie Policy.",
+        },
+        {
+          title: "Conservazione",
+          body: "I dati di navigazione sono conservati per il tempo previsto dal provider di hosting e comunque per il tempo necessario alle finalità di sicurezza. I messaggi email sono conservati fino alla gestione della richiesta e per il tempo necessario a tutelare i diritti.",
+        },
+        {
+          title: "Destinatari",
+          body: "I dati possono essere trattati dal provider di hosting (Cloudflare) e, per le email, dal fornitore del servizio di posta. Non sono utilizzati servizi di analytics o pubblicità e i dati non sono ceduti a terzi per finalità di marketing.",
+        },
+        {
+          title: "Trasferimenti extra-UE",
+          body: "Eventuali trasferimenti di dati al di fuori dello Spazio Economico Europeo avvengono nel rispetto del GDPR e con garanzie adeguate adottate dal provider (ad esempio clausole contrattuali standard).",
+        },
+        {
+          title: "Diritti dell’interessato",
+          body: "Puoi esercitare i diritti previsti dagli artt. 15–22 del GDPR (accesso, rettifica, cancellazione, limitazione, opposizione, portabilità) scrivendo a matteo@tirocchi.com. Puoi inoltre proporre reclamo al Garante per la protezione dei dati personali (www.garanteprivacy.it).",
+        },
+        {
+          title: "Link a siti terzi",
+          body: "Il sito contiene link a piattaforme esterne (Instagram, Behance, LinkedIn). Non siamo responsabili dei loro contenuti né dei trattamenti di dati che effettuano; ti invitiamo a consultare le loro informative.",
+        },
+        {
+          title: "Modifiche",
+          body: "Questa informativa può essere aggiornata nel tempo; la versione vigente è quella pubblicata su questa pagina.",
+        },
+      ],
     },
     cookie: {
       title: "Cookie Policy",
-      body: "Il sito non utilizza cookie di profilazione né tracker di terze parti.",
+      sections: [
+        {
+          title: "Cosa sono i cookie",
+          body: "I cookie sono piccoli file di testo che i siti visitati inviano al browser dell’utente.",
+        },
+        {
+          title: "Cookie utilizzati",
+          body: "Questo sito non utilizza cookie di profilazione né cookie di terze parti per il tracciamento. Possono essere utilizzati solo cookie tecnici necessari al corretto funzionamento.",
+        },
+        {
+          title: "Gestione",
+          body: "Puoi gestire o disabilitare i cookie dalle impostazioni del tuo browser.",
+        },
+      ],
     },
     notes: {
       title: "Note legali",
-      body: "Informazioni legali sul titolare del sito, sui contenuti e sulla proprietà intellettuale.",
+      sections: [
+        {
+          title: "Titolare del sito",
+          body: "Il sito tirocchi.com è un portfolio personale di Matteo Tirocchi.",
+        },
+        {
+          title: "Copyright",
+          body: "Tutti i contenuti del sito — testi, immagini, grafica, progetti e marchi — sono protetti dal diritto d’autore e appartengono a Matteo Tirocchi o ai rispettivi titolari. È vietata la riproduzione, distribuzione o riutilizzo senza autorizzazione scritta.",
+        },
+        {
+          title: "Proprietà intellettuale dei progetti",
+          body: "I progetti e le campagne presentati appartengono ai clienti e ai committenti per cui sono stati realizzati. I marchi e i loghi citati appartengono ai rispettivi proprietari e sono mostrati solo a fini illustrativi e di portfolio.",
+        },
+        {
+          title: "Esclusione di responsabilità",
+          body: "I contenuti sono forniti «così come sono», senza garanzie di completezza o aggiornamento. Il sito non è responsabile di eventuali danni derivanti dall’uso delle informazioni contenute. I link esterni non sono controllati e non ne garantiamo contenuti o disponibilità.",
+        },
+        {
+          title: "Uso consentito",
+          body: "Il sito è destinato alla consultazione personale. Non è consentito l’uso dei contenuti per finalità commerciali senza autorizzazione.",
+        },
+        {
+          title: "Legge applicabile",
+          body: "Il sito è regolato dalla legge italiana. Per ogni controversia è competente il foro di Roma.",
+        },
+      ],
     },
   },
   notFound: {
@@ -266,17 +352,103 @@ const en: typeof it = {
     creditLabel: "Website by",
   },
   legal: {
+    updated: "Last updated: 13 October 2026",
+    disclaimer:
+      "Informational text for the protection of users and the owner; for definitive use, review by a professional is recommended.",
     privacy: {
       title: "Privacy Policy",
-      body: "Information on the processing of personal data under Regulation (EU) 2016/679 (GDPR).",
+      sections: [
+        {
+          title: "Data controller",
+          body: "The data controller is Matteo Tirocchi. For any request concerning personal data you can write to matteo@tirocchi.com.",
+        },
+        {
+          title: "Data processed",
+          body: "This site does not use contact forms, profiling cookies or tracking tools. Personal data may be processed in two cases: navigation data (IP address, browser and device type, date and time of the visit) automatically recorded in the hosting service logs for security and operation purposes; data provided voluntarily, if you write to us by email (address and message content).",
+        },
+        {
+          title: "Purposes and legal basis",
+          body: "Navigation data is processed to ensure the security and correct operation of the site (legitimate interest, Art. 6.1.f GDPR). Data sent by email is processed to answer the request (performance of a contract or pre-contractual measures, Art. 6.1.b, or legitimate interest, Art. 6.1.f).",
+        },
+        {
+          title: "Processing and hosting",
+          body: "The site is static and hosted on Cloudflare Pages (Cloudflare, Inc.). The provider may process log data to deliver the service and ensure its security. Processing is carried out with IT tools and appropriate security measures.",
+        },
+        {
+          title: "Cookies",
+          body: "The site does not use profiling cookies or third-party trackers; only any necessary technical cookies may be used. For details see the Cookie Policy.",
+        },
+        {
+          title: "Retention",
+          body: "Navigation data is retained for the period set by the hosting provider and in any case for the time necessary for security purposes. Email messages are retained until the request is handled and for the time necessary to protect rights.",
+        },
+        {
+          title: "Recipients",
+          body: "Data may be processed by the hosting provider (Cloudflare) and, for emails, by the email service provider. No analytics or advertising services are used and data is not transferred to third parties for marketing purposes.",
+        },
+        {
+          title: "Transfers outside the EU",
+          body: "Any transfers of data outside the European Economic Area take place in compliance with the GDPR and with adequate safeguards adopted by the provider (e.g. standard contractual clauses).",
+        },
+        {
+          title: "Data subject rights",
+          body: "You can exercise the rights under Articles 15–22 of the GDPR (access, rectification, erasure, restriction, objection, portability) by writing to matteo@tirocchi.com. You may also lodge a complaint with the Italian Data Protection Authority (www.garanteprivacy.it).",
+        },
+        {
+          title: "Links to third-party sites",
+          body: "The site contains links to external platforms (Instagram, Behance, LinkedIn). We are not responsible for their content or the data processing they carry out; we invite you to consult their notices.",
+        },
+        {
+          title: "Changes",
+          body: "This notice may be updated over time; the current version is the one published on this page.",
+        },
+      ],
     },
     cookie: {
       title: "Cookie Policy",
-      body: "This site does not use profiling cookies or third-party trackers.",
+      sections: [
+        {
+          title: "What cookies are",
+          body: "Cookies are small text files that visited sites send to the user’s browser.",
+        },
+        {
+          title: "Cookies used",
+          body: "This site does not use profiling cookies or third-party tracking cookies. Only technical cookies necessary for correct operation may be used.",
+        },
+        {
+          title: "Management",
+          body: "You can manage or disable cookies in your browser settings.",
+        },
+      ],
     },
     notes: {
       title: "Legal notes",
-      body: "Legal information about the site owner, the content and intellectual property.",
+      sections: [
+        {
+          title: "Site owner",
+          body: "The site tirocchi.com is a personal portfolio of Matteo Tirocchi.",
+        },
+        {
+          title: "Copyright",
+          body: "All content on the site — texts, images, graphics, projects and trademarks — is protected by copyright and belongs to Matteo Tirocchi or the respective owners. Reproduction, distribution or reuse without written authorisation is prohibited.",
+        },
+        {
+          title: "Intellectual property of projects",
+          body: "The projects and campaigns shown belong to the clients and companies they were made for. Trademarks and logos mentioned belong to their respective owners and are shown for illustrative and portfolio purposes only.",
+        },
+        {
+          title: "Disclaimer",
+          body: "The content is provided «as is», without guarantees of completeness or being up to date. The site is not liable for any damage arising from the use of the information contained. External links are not controlled and we do not guarantee their content or availability.",
+        },
+        {
+          title: "Permitted use",
+          body: "The site is intended for personal viewing. Use of the content for commercial purposes without authorisation is not permitted.",
+        },
+        {
+          title: "Applicable law",
+          body: "The site is governed by Italian law. The court of Rome has jurisdiction over any dispute.",
+        },
+      ],
     },
   },
   notFound: {

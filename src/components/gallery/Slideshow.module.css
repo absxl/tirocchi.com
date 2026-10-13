@@ -1,7 +1,11 @@
 .slideshow {
   position: relative;
   display: grid;
-  gap: var(--space-m);
+  gap: var(--space-s);
+}
+
+.viewport {
+  position: relative;
   /* Clip the horizontally-overflowing track so it can't widen the page. */
   overflow: hidden;
 }
@@ -15,9 +19,11 @@
   transition: transform var(--dur-slow) var(--ease);
   touch-action: pan-y;
   cursor: grab;
+  will-change: transform;
 }
 
-.track:active {
+.track[data-dragging="true"] {
+  transition: none;
   cursor: grabbing;
 }
 
@@ -69,22 +75,24 @@
   line-height: 1.15;
 }
 
-.controls {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: var(--space-m);
-}
-
+/* Arrows — vertically centered on the sides */
 .nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
   width: 2.75rem;
   height: 2.75rem;
   display: grid;
   place-items: center;
   font-size: var(--step-2);
+  line-height: 1;
   color: var(--fg);
+  background: color-mix(in srgb, var(--bg) 62%, transparent);
   border: 1px solid var(--line-strong);
   border-radius: var(--radius-pill);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   transition: background var(--dur) var(--ease), color var(--dur) var(--ease),
     border-color var(--dur) var(--ease);
 }
@@ -96,6 +104,15 @@
   color: var(--accent-ink);
 }
 
+.prev {
+  left: 0.5rem;
+}
+
+.next {
+  right: 0.5rem;
+}
+
 .counter {
+  justify-self: center;
   color: var(--fg-dim);
 }

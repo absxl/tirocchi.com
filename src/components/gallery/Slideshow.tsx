@@ -18,16 +18,16 @@ export interface Slide {
 }
 
 /**
- * Gallery slideshow: 2 slides on desktop, 1 on mobile. Autoplay (paused on
- * hover/focus/drag), manual arrows, keyboard arrows and swipe. Respects
- * prefers-reduced-motion (no autoplay, instant moves).
+ * Gallery slideshow: 3 slides on desktop, 2 on tablet, 1 on mobile. Autoplay
+ * (paused on hover/focus/drag), side arrows, keyboard and drag/swipe.
+ * Respects prefers-reduced-motion.
  */
 export function Slideshow({
   items,
   label,
   prevLabel,
   nextLabel,
-  sizes = "(min-width: 768px) 45vw, 90vw",
+  sizes = "(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw",
 }: {
   items: Slide[];
   label: string;
@@ -35,14 +35,14 @@ export function Slideshow({
   nextLabel: string;
   sizes?: string;
 }) {
-  // Smaller covers: 3 per view on desktop, 2 on tablet, 1 on mobile.
   const wide = useMediaQuery("(min-width: 1024px)");
   const mid = useMediaQuery("(min-width: 640px)");
   const perView = wide ? 3 : mid ? 2 : 1;
   const maxIndex = Math.max(0, items.length - perView);
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
-  const drag = useRef({ x: 0, active: false });
+  const trackRef = useRef<HTMLUListElement>(null);
+  const drag = useRef({ x: 0, active: false, moved: 0 });
 
   // Keep index in range when perView changes.
   useEffect(() => {
@@ -71,17 +71,34 @@ export function Slideshow({
     return () => window.clearInterval(id);
   }, [paused, maxIndex]);
 
+  const setDrag = (value: number) => {
+    trackRef.current?.style.setProperty("--drag", `${value}px`);
+  };
+
   const onPointerDown = (event: React.PointerEvent<HTMLUListElement>) => {
-    drag.current = { x: event.clientX, active: true };
+    drag.current = { x: event.clientX, active: true, moved: 0 };
     setPaused(true);
+    if (trackRef.current) trackRef.current.dataset.dragging = "true";
+    event.currentTarget.setPointerCapture?.(event.pointerId);
   };
-  const onPointerUp = (event: React.PointerEvent<HTMLUListElement>) => {
+  const onPointerMove = (event: React.PointerEvent<HTMLUListElement>) => {
     if (!drag.current.active) return;
-    const delta = event.clientX - drag.current.x;
-    drag.current.active = false;
-    setPaused(false);
-    if (Math.abs(delta) > 40) go(delta < 0 ? 1 : -1);
+    const dx = event.clientX - drag.current.x;
+    drag.current.moved = dx;
+    setDrag(dx);
   };
+  const endDrag = () => {
+    if (!drag.current.active) return;
+    drag.current.active = false;
+    const dx = drag.current.moved;
+    if (trackRef.current) trackRef.current.dataset.dragging = "false";
+    setDrag(0);
+    setPaused(false);
+    const threshold = 45;
+    if (dx <= -threshold) go(1);
+    else if (dx >= threshold) go(-1);
+  };
+
   const onKeyDown = (event: React.KeyboardEvent) => {
     if (event.key === "ArrowLeft") {
       event.preventDefault();
@@ -106,58 +123,72 @@ export function Slideshow({
       onBlurCapture={() => setPaused(false)}
       onKeyDown={onKeyDown}
     >
-      <ul
-        className={styles.track}
-        style={{
-          ["--per-view" as string]: perView,
-          transform: `translateX(calc(${-index} * 100% / ${items.length}))`,
-        }}
-        onPointerDown={onPointerDown}
-        onPointerUp={onPointerUp}
-        onPointerCancel={() => {
-          drag.current.active = false;
-          setPaused(false);
-        }}
-      >
-        {items.map((item) => {
-          const inner = (
-            <>
-              <span className={styles.media}>
-                <SmartImage src={item.image} alt={item.alt} sizes={sizes} />
-              </span>
-              {item.meta && <span className={`mono ${styles.meta}`}>{item.meta}</span>}
-              <span className={styles.title}>{item.title}</span>
-            </>
-          );
-          return (
-            <li key={item.id} className={styles.slide} aria-roledescription="slide">
-              {item.href ? (
-                <Link href={item.href} className={styles.card} draggable={false}>
-                  {inner}
-                </Link>
-              ) : (
-                <button type="button" className={styles.card} onClick={item.onOpen} draggable={false}>
-                  {inner}
-                </button>
-              )}
-            </li>
-          );
-        })}
-      </ul>
+      <div className={styles.viewport}>
+        <ul
+          ref={trackRef}
+          className={styles.track}
+          style={{
+            ["--per-view" as string]: perView,
+            transform: `translateX(calc(${-index} * 100% / ${items.length} + var(--drag, 0px)))`,
+          }}
+          onPointerDown={onPointerDown}
+          onPointerMove={onPointerMove}
+          onPointerUp={endDrag}
+          onPointerCancel={endDrag}
+        >
+          {items.map((item) => {
+            const inner = (
+              <>
+                <span className={styles.media}>
+                  <SmartImage src={item.image} alt={item.alt} sizes={sizes} />
+                </span>
+                {item.meta && <span className={`mono ${styles.meta}`}>{item.meta}</span>}
+                <span className={styles.title}>{item.title}</span>
+              </>
+            );
+            return (
+              <li key={item.id} className={styles.slide} aria-roledescription="slide">
+                {item.href ? (
+                  <Link href={item.href} className={styles.card} draggable={false}>
+                    {inner}
+                  </Link>
+                ) : (
+                  <button type="button" className={styles.card} onClick={item.onOpen} draggable={false}>
+                    {inner}
+                  </button>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+
+        {maxIndex > 0 && (
+          <>
+            <button
+              type="button"
+              className={`${styles.nav} ${styles.prev}`}
+              onClick={() => go(-1)}
+              aria-label={prevLabel}
+            >
+              ‹
+            </button>
+            <button
+              type="button"
+              className={`${styles.nav} ${styles.next}`}
+              onClick={() => go(1)}
+              aria-label={nextLabel}
+            >
+              ›
+            </button>
+          </>
+        )}
+      </div>
 
       {maxIndex > 0 && (
-        <div className={styles.controls}>
-          <button type="button" className={styles.nav} onClick={() => go(-1)} aria-label={prevLabel}>
-            ‹
-          </button>
-          <span className={`mono ${styles.counter}`}>
-            {String(Math.min(index + 1, items.length)).padStart(2, "0")} /{" "}
-            {String(items.length).padStart(2, "0")}
-          </span>
-          <button type="button" className={styles.nav} onClick={() => go(1)} aria-label={nextLabel}>
-            ›
-          </button>
-        </div>
+        <span className={`mono ${styles.counter}`}>
+          {String(Math.min(index + 1, items.length)).padStart(2, "0")} /{" "}
+          {String(items.length).padStart(2, "0")}
+        </span>
       )}
     </div>
   );
